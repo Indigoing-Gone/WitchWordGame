@@ -12,7 +12,7 @@ public class SentenceGameController : MonoBehaviour
     [Header("Spell Parameters")]
     [SerializeField] private SentenceSpell[] spells;
     [SerializeField] private int maxMana = 3;
-    private int currentMana;
+    [SerializeField] private int currentMana;
 
     private void OnEnable()
     {
@@ -37,7 +37,8 @@ public class SentenceGameController : MonoBehaviour
             Debug.Log("Too little mana to cast");
             return;
         }
-        //currentMana -= _spell.manaCost;
+
+        currentMana -= _spell.manaCost;
 
         List<int> _selectedWordIndicies = SelectWords(_spell.numberOfWordsChecked);
 

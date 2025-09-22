@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ad09beb600793409c31f773a97ea87, type: 3}
+  m_Name: TestSentenceData
+  m_EditorClassIdentifier: 
+  sentence: Can you water my plants?
+  words:
+  - word: Can
+    hasClues: 1
+    clues:
+    - Part of Speech
+    - Synonym
+    cluesUnlocked: 0
+  - word: you
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    cluesUnlocked: 0
+  - word: water
+    hasClues: 1
+    clues:
+    - Part of Speech
+    - Synonym
+    cluesUnlocked: 0
+  - word: my
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    cluesUnlocked: 0
+  - word: plants
+    hasClues: 1
+    clues:
+    - Part of Speech
+    - Synonym
+    cluesUnlocked: 0
+  - word: '?'
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    cluesUnlocked: 0

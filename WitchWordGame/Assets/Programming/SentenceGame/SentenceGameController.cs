@@ -6,7 +6,8 @@ using Random = System.Random;
 
 public class SentenceGameController : MonoBehaviour
 {
-    [Header("Sentence Data")]
+    [Header("Components")]
+    private SentenceGameVisuals sentenceVisuals;
     [SerializeField] private SentenceData sentenceData;
 
     [Header("Spell Parameters")]
@@ -27,6 +28,9 @@ public class SentenceGameController : MonoBehaviour
 
     private void Awake()
     {
+        sentenceVisuals = GetComponent<SentenceGameVisuals>();
+        sentenceVisuals.CreateSentenceVisuals(sentenceData);
+
         currentMana = maxMana;
     }
 

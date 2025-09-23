@@ -16,7 +16,7 @@ public class SentenceData : ScriptableObject
             List<int> _indices = new();
             for (int i = 0; i < words.Length; i++)
             {
-                if (!words[i].hasClues || words[i].cluesUnlocked > words[i].clues.Length) continue;
+                if (!words[i].hasClues || words[i].CluesUnlocked > words[i].clues.Length) continue;
                 _indices.Add(i);
             }
             return _indices;
@@ -40,7 +40,7 @@ public class SentenceData : ScriptableObject
                 word = _matches[i].Value,
                 hasClues = false,
                 clues = new string[] { "Part of Speech", "Synonym" },
-                cluesUnlocked = 0
+                CluesUnlocked = 0
             };
         }
 
@@ -49,8 +49,8 @@ public class SentenceData : ScriptableObject
 
     public void IncrementCluesUnlocked(int _index, int _amount = 1)
     {
-        if (_index >= words.Length || !words[_index].hasClues) return;
-        words[_index].cluesUnlocked += _amount;
+        if (_index >= words.Length) return;
+        words[_index].CluesUnlocked += _amount;
     }
 
     public void ResetData()
@@ -58,16 +58,29 @@ public class SentenceData : ScriptableObject
         for (int i = 0; i < words.Length; i++)
         {
             if (!words[i].hasClues) continue;
-            words[i].cluesUnlocked = 0;
+            words[i].CluesUnlocked = 0;
         }
     }
 }
 
 [Serializable]
-public struct Word
+public class Word
 {
     public string word;
     public bool hasClues;
     public string[] clues;
-    public int cluesUnlocked;
+
+    [SerializeField] private int cluesUnlocked;
+    public int CluesUnlocked
+    {
+        get => cluesUnlocked;
+        set
+        {
+            if (!hasClues || value > clues.Length) return;
+            cluesUnlocked = value;
+            ClueUnlocked?.Invoke();
+        }
+    }
+
+    public event Action ClueUnlocked;
 }

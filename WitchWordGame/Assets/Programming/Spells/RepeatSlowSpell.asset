@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 11400000, guid: 5a60b5899c8ded24a8a79caf708cd871, type: 2}
   spellName: Repeat Slow
-  chanceOfSuccess: 0.33
+  chanceOfSuccess: 0.4
   numberOfWordsChecked: 0.8
   spellType: 1
   manaCost: 2

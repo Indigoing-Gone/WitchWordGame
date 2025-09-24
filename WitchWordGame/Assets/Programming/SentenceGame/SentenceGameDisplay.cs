@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SentenceGameVisuals : MonoBehaviour
+public class SentenceGameDisplay : MonoBehaviour
 {
     [SerializeField] private RectTransform sentenceContainer;
     [SerializeField] private GameObject wordVisualPrefab;
@@ -12,7 +12,7 @@ public class SentenceGameVisuals : MonoBehaviour
         for (int i = 0; i < _sentenceData.words.Length; i++)
         {
             GameObject _wordVisual = Instantiate(wordVisualPrefab, sentenceContainer);
-            WordVisual _wordVisualScript = _wordVisual.GetComponent<WordVisual>();
+            WordDisplay _wordVisualScript = _wordVisual.GetComponent<WordDisplay>();
             _wordVisualScript.AttachWord(_sentenceData.words[i]);
             _wordVisualScript.LayoutRebuilt += RebuildLayout;
         }

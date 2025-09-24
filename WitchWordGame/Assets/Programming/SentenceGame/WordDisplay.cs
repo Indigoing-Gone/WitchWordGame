@@ -22,7 +22,7 @@ public class WordDisplay : MonoBehaviour
         word = _word;
 
         //Assign text
-        wordText.text = word.word;
+        wordText.text = word.hasClues ? new string('X', word.word.Length) : word.word;
         if (word.hasClues) for (int i = 0; i < cluesText.Length && i < word.clues.Length; i++) cluesText[i].text = word.clues[i];
         
         //Disable Clues

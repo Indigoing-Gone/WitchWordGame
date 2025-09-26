@@ -16,20 +16,9 @@ public class SentenceSpell : ScriptableObject
 
     public event Action<SentenceSpell> CastingSpell;
 
-    private void OnEnable()
-    {
-        input.InputRecieved += CastSpell;
-    }
-
-    private void OnDisable()
-    {
-        input.InputRecieved -= CastSpell;
-    }
-
-    private void CastSpell()
-    {
-        CastingSpell?.Invoke(this);
-    }
+    private void OnEnable() => input.InputRecieved += CastSpell;
+    private void OnDisable() => input.InputRecieved -= CastSpell;
+    private void CastSpell() => CastingSpell?.Invoke(this);
 }
 
 public enum SpellType

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -17,21 +18,34 @@ public class SentenceGameController : MonoBehaviour
 
     private void OnEnable()
     {
-        for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell += ProcessSpell;
+
     }
 
     private void OnDisable()
     {
-        for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell -= ProcessSpell;
-        sentenceData.ResetData();
+
     }
 
     private void Awake()
     {
+        OnEnteringSentenceGame(sentenceData);
+    }
+
+    private void OnEnteringSentenceGame(SentenceData _sentenceData)
+    {
+        sentenceData = _sentenceData;
         sentenceVisuals = GetComponent<SentenceGameDisplay>();
         sentenceVisuals.CreateSentenceVisuals(sentenceData);
 
         currentMana = maxMana;
+
+        for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell += ProcessSpell;
+    }
+
+    private void OnExitingSentenceGame()
+    {
+        for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell -= ProcessSpell;
+        sentenceData.ResetData();
     }
 
     private void ProcessSpell(SentenceSpell _spell)

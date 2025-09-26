@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3684abce2d8a209429b78b8bf92f680c, type: 3}
-  m_Name: RepeatSpell
+  m_Script: {fileID: 11500000, guid: 03b37d8ba47810a48a4b69062c0c2a1e, type: 3}
+  m_Name: WitchHut_Input
   m_EditorClassIdentifier: 
-  input: {fileID: 11400000, guid: 112a15ca418bdbd4098b2ff21d927754, type: 2}
-  spellName: Repeat
-  chanceOfSuccess: 0.75
-  numberOfWordsChecked: 0.33
-  spellType: 1
-  manaCost: 1
+  triggerInput: 23

@@ -376,6 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exitInput: {fileID: 11400000, guid: 1e13e3eebb882b448931cf017b5c9e5b, type: 2}
+  speakSentenceEvent: {fileID: 11400000, guid: 9327430f6d30fff4a8e828d5061efe55, type: 2}
   spells:
   - {fileID: 11400000, guid: 7c4c7823fc9fe2947825c1b9de306502, type: 2}
   - {fileID: 11400000, guid: 0925989fe4e8d104492328efe6b0faca, type: 2}

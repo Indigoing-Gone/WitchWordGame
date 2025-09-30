@@ -63,12 +63,14 @@ public class SentenceAssetEditor : Editor
     SerializedProperty sentenceProp;
     SerializedProperty wordsProp;
     SerializedProperty manaProp;
+    SerializedProperty spokenProp;
 
     void OnEnable()
     {
         sentenceProp = serializedObject.FindProperty("sentence");
         wordsProp = serializedObject.FindProperty("words");
         manaProp = serializedObject.FindProperty("sentenceMana");
+        spokenProp = serializedObject.FindProperty("spokenSentence");
     }
 
     public override void OnInspectorGUI()
@@ -93,6 +95,7 @@ public class SentenceAssetEditor : Editor
 
         EditorGUILayout.Space();
         EditorGUILayout.PropertyField(wordsProp, includeChildren: true);
+        EditorGUILayout.PropertyField(spokenProp);
         EditorGUILayout.PropertyField(manaProp);
         serializedObject.ApplyModifiedProperties();
     }

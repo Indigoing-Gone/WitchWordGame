@@ -11,6 +11,7 @@ public class SentenceGameController : MonoBehaviour
     private SentenceGameDisplay sentenceVisuals;
     private SentenceData sentenceData;
     [SerializeField] private LoomReciever exitInput;
+    [SerializeField] private GameEvent_Audio speakSentenceEvent;
 
     [Header("Spell Parameters")]
     [SerializeField] private SentenceSpell[] spells;
@@ -46,6 +47,7 @@ public class SentenceGameController : MonoBehaviour
 
         for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell += ProcessSpell;
 
+        speakSentenceEvent.TriggerEvent(sentenceData.spokenSentence);
         SentenceGameEntered?.Invoke();
     }
 

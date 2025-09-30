@@ -50,3 +50,5 @@ MonoBehaviour:
     - Part of Speech
     - Synonym
     cluesUnlocked: 0
+  spokenSentence: {fileID: 8300000, guid: 6a1e0e2545dccdc4ca181fb05961b1a8, type: 3}
+  sentenceMana: 0

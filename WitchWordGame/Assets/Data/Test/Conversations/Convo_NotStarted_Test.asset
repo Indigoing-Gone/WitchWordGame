@@ -15,7 +15,9 @@ MonoBehaviour:
   lines:
   - name: TEST
     text: Mission is not started
+    bark: {fileID: 8300000, guid: 57e022ef43c52f740946b3f8127bc60f, type: 3}
   - name: TEST
-    text: 2
+    text: Bark bark
+    bark: {fileID: 8300000, guid: 0ab5e079771a9cd44a8f34cb4c244998, type: 3}
   nextConversation: {fileID: 0}
   triggerSentenceGame: 1

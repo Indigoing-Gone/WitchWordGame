@@ -9,6 +9,7 @@ public class SentenceData : ScriptableObject
     [TextArea(1, 4)]
     public string sentence;
     public Word[] words = new Word[0];
+    public AudioClip spokenSentence;
     public int sentenceMana;
 
     public List<int> WordIndiciesWithData

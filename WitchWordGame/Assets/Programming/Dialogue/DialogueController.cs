@@ -6,9 +6,10 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private LoomReciever input;
     [SerializeField] private DialogueDisplay dialogueUI;
+    [SerializeField] private GameEvent_Audio barkEvent;
 
-    [SerializeField] private Conversation currentConversation;
-    [SerializeField] private Conversation defaultConversation;
+    private Conversation currentConversation;
+    private Conversation defaultConversation;
 
     private int activeLineIndex;
     private bool conversationStarted = false;
@@ -78,6 +79,10 @@ public class DialogueController : MonoBehaviour
         if (activeLineIndex < currentConversation.lines.Length)
         {
             dialogueUI.DisplayLine(currentConversation.lines[activeLineIndex]);
+
+            AudioClip _bark = currentConversation.lines[activeLineIndex].bark;
+            if (_bark != null) barkEvent.TriggerEvent(_bark);
+
             activeLineIndex++;
         }
         else AdvanceConversation();

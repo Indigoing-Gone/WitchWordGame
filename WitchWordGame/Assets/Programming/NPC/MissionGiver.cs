@@ -7,10 +7,11 @@ public class MissionGiver : MonoBehaviour
     private Speaker speaker;
     [SerializeField] private MissionData missionData;
     [SerializeField] private SentenceData sentenceData;
-    [SerializeField] private GameEvent_Void startMissionEvent;
+    [SerializeField] private GameEvent_Audio startMissionEvent;
     [SerializeField] private LoomReciever enterConversationInput;
 
     static public event Action<SentenceData> EnteringSentenceGame;
+    static public event Action<MissionData> StartingMission;
 
     private void OnEnable()
     {
@@ -22,8 +23,6 @@ public class MissionGiver : MonoBehaviour
     {
         speaker.ConversationExited -= OnConversationExited;
         enterConversationInput.InputRecieved -= Speak;
-        missionData.ResetData();
-        sentenceData.ResetData();
     }
 
     private void Awake()
@@ -40,6 +39,10 @@ public class MissionGiver : MonoBehaviour
     private void OnConversationExited()
     {
         if (missionData.CurrentConversation.triggerSentenceGame) EnteringSentenceGame?.Invoke(sentenceData);
-        if (missionData.MissionStatus == MissionStatus.NotStarted) startMissionEvent.TriggerEvent();
+        if (missionData.MissionStatus == MissionStatus.NotStarted)
+        {
+            StartingMission?.Invoke(missionData);
+            startMissionEvent.TriggerEvent();
+        }
     }
 }

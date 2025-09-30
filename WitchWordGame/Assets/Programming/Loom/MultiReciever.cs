@@ -8,7 +8,7 @@ public class MultiReciever : MonoBehaviour
     [SerializeField] private int recieverProgression;
     private bool successfulInput;
 
-    public GameEvent_Void multiInputRecieved;
+    public GameEvent_Audio multiInputRecieved;
 
     private void OnEnable()
     {

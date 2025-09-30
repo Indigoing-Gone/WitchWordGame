@@ -57,7 +57,6 @@ public class SentenceData : ScriptableObject
 
     public void ResetData()
     {
-        Debug.Log("Reset");
         for (int i = 0; i < words.Length; i++)
         {
             if (!words[i].hasClues) continue;

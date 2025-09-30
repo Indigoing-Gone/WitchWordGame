@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(menuName = "Scenes/SceneSwitcher")]
+[CreateAssetMenu(menuName = "System/SceneSwitcher")]
 public class SceneSwitcher : ScriptableObject
 {
     [SerializeField] private LoomReciever input;

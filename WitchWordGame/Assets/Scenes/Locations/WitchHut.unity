@@ -119,6 +119,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1359483442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359483444}
+  - component: {fileID: 1359483443}
+  m_Layer: 0
+  m_Name: MissionReciever
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1359483443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359483442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54eb6798ebac5804a8247dcf42619038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loomRecievers:
+  - {fileID: 11400000, guid: 54e2ccce2419a354da1583970bbcb61d, type: 2}
+  - {fileID: 11400000, guid: 337b4555a10c6c74d8599168ea0f3edb, type: 2}
+  recieverProgression: 0
+  multiInputRecieved: {fileID: 11400000, guid: 95d5710fae9798c40b6d0b3f248b0b57, type: 2}
+--- !u!4 &1359483444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359483442}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1973172967
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,8 +178,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1973172969}
   - component: {fileID: 1973172968}
+  - component: {fileID: 1973172970}
+  - component: {fileID: 1973172971}
   m_Layer: 0
-  m_Name: Square
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,13 +252,43 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.09, y: 5.09, z: 5.09}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973172970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973172967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a83b245b2fe58e49b212e30f2b08704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionData: {fileID: 11400000, guid: 55a61e56f14d6a246a66a53b4a5020a5, type: 2}
+  sentenceData: {fileID: 11400000, guid: eca52c32d4a0535448dfb96ac23f3a64, type: 2}
+  startMissionEvent: {fileID: 11400000, guid: 59c29155773663340bd1ea2c8f487b94, type: 2}
+  enterConversationInput: {fileID: 11400000, guid: 42b6898ad628332468f5d812cb7e2714, type: 2}
+--- !u!114 &1973172971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973172967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b24a342ebee6e1f4fb75675678a7d542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversation: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1973172969}
+  - {fileID: 1359483444}

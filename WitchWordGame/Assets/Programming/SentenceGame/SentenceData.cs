@@ -9,6 +9,8 @@ public class SentenceData : ScriptableObject
     [TextArea(1, 4)]
     public string sentence;
     public Word[] words = new Word[0];
+    public int sentenceMana;
+
     public List<int> WordIndiciesWithData
     {
         get
@@ -55,11 +57,14 @@ public class SentenceData : ScriptableObject
 
     public void ResetData()
     {
+        Debug.Log("Reset");
         for (int i = 0; i < words.Length; i++)
         {
             if (!words[i].hasClues) continue;
             words[i].CluesUnlocked = 0;
         }
+
+        sentenceMana = -1;
     }
 }
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class LoomReciever : ScriptableObject
 {
     [SerializeField] private string triggerInput;
+    [SerializeField] private GameState activeState;
     public event Action InputRecieved;
 
     private void OnEnable()

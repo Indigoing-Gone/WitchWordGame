@@ -9,7 +9,8 @@ public class SentenceGameController : MonoBehaviour
 {
     [Header("Components")]
     private SentenceGameDisplay sentenceVisuals;
-    [SerializeField] private SentenceData sentenceData;
+    private SentenceData sentenceData;
+    [SerializeField] private LoomReciever exitInput;
 
     [Header("Spell Parameters")]
     [SerializeField] private SentenceSpell[] spells;
@@ -18,26 +19,27 @@ public class SentenceGameController : MonoBehaviour
 
     private void OnEnable()
     {
-
+        MissionGiver.EnteringSentenceGame += OnEnteringSentenceGame;
+        exitInput.InputRecieved += OnExitingSentenceGame;
     }
 
     private void OnDisable()
     {
-
+        MissionGiver.EnteringSentenceGame -= OnEnteringSentenceGame;
+        exitInput.InputRecieved -= OnExitingSentenceGame;
     }
 
     private void Awake()
     {
-        OnEnteringSentenceGame(sentenceData);
+        sentenceVisuals = GetComponent<SentenceGameDisplay>();
     }
 
     private void OnEnteringSentenceGame(SentenceData _sentenceData)
     {
         sentenceData = _sentenceData;
-        sentenceVisuals = GetComponent<SentenceGameDisplay>();
         sentenceVisuals.CreateSentenceVisuals(sentenceData);
 
-        currentMana = maxMana;
+        if(sentenceData.sentenceMana == -1) sentenceData.sentenceMana = maxMana;
 
         for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell += ProcessSpell;
     }
@@ -45,25 +47,22 @@ public class SentenceGameController : MonoBehaviour
     private void OnExitingSentenceGame()
     {
         for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell -= ProcessSpell;
-        sentenceData.ResetData();
+        sentenceVisuals.DeleteSentenceVisuals();
     }
 
     private void ProcessSpell(SentenceSpell _spell)
     {
-        if (_spell.manaCost > currentMana)
+        if (_spell.manaCost > sentenceData.sentenceMana)
         {
             Debug.Log("Too little mana to cast");
             return;
         }
 
-        currentMana -= _spell.manaCost;
+        sentenceData.sentenceMana -= _spell.manaCost;
 
         List<int> _selectedWordIndicies = SelectWords(_spell.numberOfWordsChecked);
 
-        if (_spell.spellType == SpellType.AddClue)
-        {
-            AttemptAddClues(_selectedWordIndicies, _spell.chanceOfSuccess);
-        }
+        if (_spell.spellType == SpellType.AddClue) AttemptAddClues(_selectedWordIndicies, _spell.chanceOfSuccess);
     }
 
     private List<int> SelectWords(float numberOfWordsChecked)

@@ -9,6 +9,8 @@ public class SentenceGameDisplay : MonoBehaviour
 
     public void CreateSentenceVisuals(SentenceData _sentenceData)
     {
+        DeleteSentenceVisuals();
+
         for (int i = 0; i < _sentenceData.words.Length; i++)
         {
             GameObject _wordVisual = Instantiate(wordVisualPrefab, sentenceContainer);
@@ -18,6 +20,11 @@ public class SentenceGameDisplay : MonoBehaviour
         }
 
         RebuildLayout();
+    }
+
+    public void DeleteSentenceVisuals()
+    {
+        foreach (Transform child in sentenceContainer.transform) Destroy(child.gameObject);
     }
 
     private void RebuildLayout()

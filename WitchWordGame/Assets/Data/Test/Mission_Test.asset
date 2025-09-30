@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd29aeac57fef947b36a743840f2c0e, type: 3}
+  m_Name: Mission_Test
+  m_EditorClassIdentifier: 
+  missionEvents:
+  - missionStatus: 0
+    conversation: {fileID: 11400000, guid: 52d9d693ef0de1c4aa2e38e674a57d3d, type: 2}
+    progressEvent: {fileID: 11400000, guid: 59c29155773663340bd1ea2c8f487b94, type: 2}
+  - missionStatus: 1
+    conversation: {fileID: 11400000, guid: 1060dd4c4f8b4a141a83ed63774629c8, type: 2}
+    progressEvent: {fileID: 11400000, guid: 95d5710fae9798c40b6d0b3f248b0b57, type: 2}
+  - missionStatus: 2
+    conversation: {fileID: 11400000, guid: 3b238ad487e1bf84c94eddd2f90cd443, type: 2}
+    progressEvent: {fileID: 0}
+  activeMissionEventId: 0

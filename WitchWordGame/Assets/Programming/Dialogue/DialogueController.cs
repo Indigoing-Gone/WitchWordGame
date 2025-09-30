@@ -12,7 +12,6 @@ public class DialogueController : MonoBehaviour
 
     private int activeLineIndex;
     private bool conversationStarted = false;
-    private bool advanceDesired = true;
 
     //Broadcast when dialogue is started/ended
     public static event Action ConversationStarted;
@@ -49,7 +48,7 @@ public class DialogueController : MonoBehaviour
 
     private void EndConversation()
     {
-        if (currentConversation.shouldNextChangeSpeakerConversation) ChangeSpeakerConversation?.Invoke(currentConversation.nextConversation);
+        //if (currentConversation.shouldNextChangeSpeakerConversation) ChangeSpeakerConversation?.Invoke(currentConversation.nextConversation);
 
         currentConversation = defaultConversation;
         conversationStarted = false;
@@ -67,7 +66,7 @@ public class DialogueController : MonoBehaviour
 
     private void AdvanceConversation()
     {
-        if (currentConversation.nextConversation != null && !currentConversation.shouldNextChangeSpeakerConversation) ChangeConversation(currentConversation.nextConversation);
+        if (currentConversation.nextConversation != null /* && !currentConversation.shouldNextChangeSpeakerConversation */) ChangeConversation(currentConversation.nextConversation);
         else EndConversation();
     }
 

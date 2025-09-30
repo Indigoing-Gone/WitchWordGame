@@ -1,14 +1,17 @@
+using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Conversation", menuName = "Dialogue/Conversation")]
+[Serializable]
+[CreateAssetMenu(fileName = "New Conversation", menuName = "NPC/Conversation")]
 public class Conversation : ScriptableObject
 {
     public Line[] lines;
     public Conversation nextConversation;
-    public bool shouldNextChangeSpeakerConversation;
+    public bool triggerSentenceGame;
+    //public bool shouldNextChangeSpeakerConversation;
 }
 
-[System.Serializable]
+[Serializable]
 public struct Line
 {
     public string name;

@@ -11,13 +11,11 @@ public class Speaker : MonoBehaviour
 
     public void EnterConversation()
     {
-        EnteringConversation?.Invoke(conversation);
-
         DialogueController.ConversationEnded += OnConversationEnded;
-        DialogueController.ChangeSpeakerConversation += ChangeConversation;
+        EnteringConversation?.Invoke(conversation);        
     }
 
-    private void ChangeConversation(Conversation _newConversation)
+    public void ChangeConversation(Conversation _newConversation)
     {
         conversation = _newConversation;
     }
@@ -25,8 +23,6 @@ public class Speaker : MonoBehaviour
     private void OnConversationEnded()
     {
         DialogueController.ConversationEnded -= OnConversationEnded;
-        DialogueController.ChangeSpeakerConversation -= ChangeConversation;
-
         ConversationExited?.Invoke();
     }
 }

@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 [CustomPropertyDrawer(typeof(Word))]
-public class TokenPropertyDrawer : PropertyDrawer
+public class WordPropertyDrawer : PropertyDrawer
 {
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
@@ -62,11 +62,13 @@ public class SentenceAssetEditor : Editor
 {
     SerializedProperty sentenceProp;
     SerializedProperty wordsProp;
+    SerializedProperty manaProp;
 
     void OnEnable()
     {
         sentenceProp = serializedObject.FindProperty("sentence");
         wordsProp = serializedObject.FindProperty("words");
+        manaProp = serializedObject.FindProperty("sentenceMana");
     }
 
     public override void OnInspectorGUI()
@@ -91,6 +93,7 @@ public class SentenceAssetEditor : Editor
 
         EditorGUILayout.Space();
         EditorGUILayout.PropertyField(wordsProp, includeChildren: true);
+        EditorGUILayout.PropertyField(manaProp);
         serializedObject.ApplyModifiedProperties();
     }
 }

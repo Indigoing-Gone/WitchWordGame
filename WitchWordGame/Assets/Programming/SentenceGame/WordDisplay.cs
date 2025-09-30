@@ -26,7 +26,7 @@ public class WordDisplay : MonoBehaviour
         if (word.hasClues) for (int i = 0; i < cluesText.Length && i < word.clues.Length; i++) cluesText[i].text = word.clues[i];
         
         //Disable Clues
-        for (int i = 0; i < cluesText.Length; i++) cluesText[i].gameObject.SetActive(false);
+        for (int i = word.CluesUnlocked; i < cluesText.Length; i++) cluesText[i].gameObject.SetActive(false);
 
         word.ClueUnlocked += OnClueUnlocked;
 

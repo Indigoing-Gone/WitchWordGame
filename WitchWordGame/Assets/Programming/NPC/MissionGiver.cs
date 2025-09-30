@@ -7,7 +7,7 @@ public class MissionGiver : MonoBehaviour
     private Speaker speaker;
     [SerializeField] private MissionData missionData;
     [SerializeField] private SentenceData sentenceData;
-    [SerializeField] private GameEvent_Audio startMissionEvent;
+    [SerializeField] private GameEvent_Void startMissionEvent;
     [SerializeField] private LoomReciever enterConversationInput;
 
     static public event Action<SentenceData> EnteringSentenceGame;

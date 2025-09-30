@@ -66,5 +66,5 @@ public struct MissionEvent
 {
     public MissionStatus missionStatus;
     public Conversation conversation;
-    public GameEvent_Audio progressEvent;
+    public GameEvent_Void progressEvent;
 }

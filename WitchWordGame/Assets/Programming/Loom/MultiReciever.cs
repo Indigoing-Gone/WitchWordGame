@@ -1,14 +1,11 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Loom/MultiReciever")]
 public class MultiReciever : MonoBehaviour
 {
     [SerializeField] private LoomReciever[] loomRecievers;
     [SerializeField] private int recieverProgression;
-    private bool successfulInput;
-
-    public GameEvent_Audio multiInputRecieved;
+    [SerializeField] private GameEvent_Void multiInputRecieved;
 
     private void OnEnable()
     {
@@ -28,7 +25,6 @@ public class MultiReciever : MonoBehaviour
 
         if(recieverProgression >= loomRecievers.Length)
         {
-            successfulInput = true;
             multiInputRecieved.TriggerEvent();
             return;
         }
@@ -39,7 +35,6 @@ public class MultiReciever : MonoBehaviour
     public void ResetData()
     {
         loomRecievers[0].InputRecieved += TrackInputs;
-        successfulInput = false;
         recieverProgression = 0;
     }
 }

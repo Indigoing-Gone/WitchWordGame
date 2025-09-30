@@ -15,5 +15,7 @@ MonoBehaviour:
   lines:
   - name: TEST
     text: Mission is not started
+  - name: TEST
+    text: 2
   nextConversation: {fileID: 0}
   triggerSentenceGame: 1

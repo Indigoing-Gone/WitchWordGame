@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Input_Repeat
   m_EditorClassIdentifier: 
   triggerInput: 31
+  activeState: 3
+  isActive: 0

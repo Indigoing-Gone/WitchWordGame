@@ -17,6 +17,9 @@ public class SentenceGameController : MonoBehaviour
     [SerializeField] private int maxMana = 3;
     [SerializeField] private int currentMana;
 
+    public static event Action SentenceGameEntered;
+    public static event Action SentenceGameExited;
+
     private void OnEnable()
     {
         MissionGiver.EnteringSentenceGame += OnEnteringSentenceGame;
@@ -42,12 +45,16 @@ public class SentenceGameController : MonoBehaviour
         if(sentenceData.sentenceMana == -1) sentenceData.sentenceMana = maxMana;
 
         for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell += ProcessSpell;
+
+        SentenceGameEntered?.Invoke();
     }
 
     private void OnExitingSentenceGame()
     {
         for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell -= ProcessSpell;
         sentenceVisuals.DeleteSentenceVisuals();
+
+        SentenceGameExited?.Invoke();
     }
 
     private void ProcessSpell(SentenceSpell _spell)

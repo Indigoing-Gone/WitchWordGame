@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Input_ProgressDialogue
   m_EditorClassIdentifier: 
   triggerInput: 3675
+  activeState: 2
+  isActive: 0

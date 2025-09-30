@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class GameData : ScriptableObject
+public class GameData : MonoBehaviour
 {
     [SerializeField] private GameState gameState;
 
@@ -10,6 +10,7 @@ public class GameData : ScriptableObject
         get => gameState;
         set
         {
+            if (gameState == value) return;
             gameState = value;
             GameStateChanged?.Invoke(gameState);
         }
@@ -17,8 +18,14 @@ public class GameData : ScriptableObject
 
     static public event Action<GameState> GameStateChanged;
 
-    public void ResetData()
+    private void OnEnable()
     {
+        DialogueController.ConversationStarted += () => GameState = GameState.Dialogue;
+        DialogueController.ConversationEnded += () => GameState = GameState.Navigation;
+
+        SentenceGameController.SentenceGameEntered += () => GameState = GameState.SentenceGame;
+        SentenceGameController.SentenceGameExited += () => GameState = GameState.Navigation;
+
         GameState = GameState.Navigation;
     }
 }

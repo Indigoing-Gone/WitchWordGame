@@ -6,11 +6,13 @@ public class LoomReciever : ScriptableObject
 {
     [SerializeField] private string triggerInput;
     [SerializeField] private GameState activeState;
+    [SerializeField] private bool isActive;
     public event Action InputRecieved;
 
     private void OnEnable()
     {
         LoomController.InputCompleted += HandleInput;
+        GameData.GameStateChanged += (_newState) => isActive = _newState == activeState;
     }
 
     private void OnDisable()
@@ -20,6 +22,8 @@ public class LoomReciever : ScriptableObject
 
     private void HandleInput(string _input)
     {
+        if (!isActive) return;
+
         if (_input != triggerInput)
         {
             Span<char> _inputSpan = _input.ToCharArray();

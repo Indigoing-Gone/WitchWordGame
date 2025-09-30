@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: WitchHut_Input
   m_EditorClassIdentifier: 
   triggerInput: 23
+  activeState: 1
+  isActive: 0

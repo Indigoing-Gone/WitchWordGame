@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Input_Spell2_Test
   m_EditorClassIdentifier: 
   triggerInput: 132
-  activeState: 0
+  activeState: 1
+  isActive: 0

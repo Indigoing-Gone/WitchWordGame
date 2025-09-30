@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Input_Exit
   m_EditorClassIdentifier: 
   triggerInput: 2547
+  activeState: 3
+  isActive: 0

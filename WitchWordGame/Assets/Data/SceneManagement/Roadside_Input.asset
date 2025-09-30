@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Roadside_Input
   m_EditorClassIdentifier: 
   triggerInput: 12
+  activeState: 1
+  isActive: 0

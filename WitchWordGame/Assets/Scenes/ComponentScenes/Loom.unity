@@ -172,7 +172,8 @@ PrefabInstance:
       value: Loom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3479223040910900797, guid: 3f7695d24f1df2e4cb715f8f89e4ba16, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f7695d24f1df2e4cb715f8f89e4ba16, type: 3}

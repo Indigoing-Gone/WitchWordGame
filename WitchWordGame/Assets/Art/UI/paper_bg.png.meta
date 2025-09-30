@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5242b2abd5b0fc24191e6a5f507ffda0
+guid: 172a6d3a982b08446bb33704974d04a6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1323016423850527632
-    second: textbox_weathered_slightangle_0
+      213: 5361879805376855263
+    second: paper_bg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: textbox_weathered_slightangle_0
+      name: paper_bg_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 98
-        width: 3585
-        height: 1035
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 09b4e978d6c4c5210800000000000000
-      internalID: 1323016423850527632
+      spriteID: fdcf3d74649396a40800000000000000
+      internalID: 5361879805376855263
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      textbox_weathered_slightangle_0: 1323016423850527632
+      paper_bg_0: 5361879805376855263
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

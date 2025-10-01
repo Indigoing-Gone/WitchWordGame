@@ -13,9 +13,11 @@ public class SentenceGameController : MonoBehaviour
     [SerializeField] private LoomReciever exitInput;
     [SerializeField] private GameEvent_Audio speakSentenceEvent;
 
-    [Header("Spell Parameters")]
-    [SerializeField] private SentenceSpell[] spells;
+    [Header("Spells")]
+    [SerializeField] private List<SentenceSpell> spells;
     [SerializeField] private int maxMana = 3;
+    [SerializeField] private List<SentenceSpell> spellProgression;
+    [SerializeField] private GameEvent_Void[] spellProgressionEvents;
 
     public static event Action SentenceGameEntered;
     public static event Action SentenceGameExited;
@@ -24,12 +26,18 @@ public class SentenceGameController : MonoBehaviour
     {
         MissionGiver.EnteringSentenceGame += OnEnteringSentenceGame;
         exitInput.InputRecieved += OnExitingSentenceGame;
+
+        for (int i = 0; i < spellProgressionEvents.Length; i++)
+            spellProgressionEvents[i].AddListener(ProgressSpells);
     }
 
     private void OnDisable()
     {
         MissionGiver.EnteringSentenceGame -= OnEnteringSentenceGame;
         exitInput.InputRecieved -= OnExitingSentenceGame;
+
+        for (int i = 0; i < spellProgressionEvents.Length; i++)
+            spellProgressionEvents[i].RemoveListener(ProgressSpells);
     }
 
     private void Awake()
@@ -44,7 +52,7 @@ public class SentenceGameController : MonoBehaviour
 
         if(sentenceData.sentenceMana == -1) sentenceData.sentenceMana = maxMana;
 
-        for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell += ProcessSpell;
+        for (int i = 0; i < spells.Count; i++) spells[i].CastingSpell += ProcessSpell;
 
         speakSentenceEvent.TriggerEvent(sentenceData.spokenSentence);
         SentenceGameEntered?.Invoke();
@@ -52,7 +60,7 @@ public class SentenceGameController : MonoBehaviour
 
     private void OnExitingSentenceGame()
     {
-        for (int i = 0; i < spells.Length; i++) spells[i].CastingSpell -= ProcessSpell;
+        for (int i = 0; i < spells.Count; i++) spells[i].CastingSpell -= ProcessSpell;
         sentenceVisuals.DeleteSentenceVisuals();
 
         SentenceGameExited?.Invoke();
@@ -107,6 +115,14 @@ public class SentenceGameController : MonoBehaviour
         }
 
         return _selectedWords;
+    }
+
+    private void ProgressSpells()
+    {
+        maxMana++;
+        if (spellProgression.Count <= 0) return;
+        spells.Add(spellProgression[0]);
+        spellProgression.RemoveAt(0);
     }
 
     static public void Shuffle<T>(List<T> _list)

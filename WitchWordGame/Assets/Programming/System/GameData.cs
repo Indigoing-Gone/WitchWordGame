@@ -11,6 +11,7 @@ public class GameData : MonoBehaviour
     private HashSet<SentenceData> modifiedSentenceData;
 
     [SerializeField] private GameEvent_Audio audioOneShot;
+    [SerializeField] private GameEvent_Void[] sentenceRefreshEvents;
 
     public GameState GameState
     {
@@ -35,7 +36,10 @@ public class GameData : MonoBehaviour
 
         MissionGiver.StartingMission += (_data) => modifiedMissionData.Add(_data);
         MissionGiver.EnteringSentenceGame += (_data) => modifiedSentenceData.Add(_data);
+
         audioOneShot.AddListener(PlayAudio);
+        for (int i = 0; i < sentenceRefreshEvents.Length; i++)
+            sentenceRefreshEvents[i].AddListener(ResetSentenceData);
 
 
         audioSource = GetComponent<AudioSource>();
@@ -47,14 +51,22 @@ public class GameData : MonoBehaviour
 
     private void OnDisable()
     {
+        ResetSentenceData();
         foreach (MissionData _data in modifiedMissionData) _data.ResetData();
-        foreach (SentenceData _data in modifiedSentenceData) _data.ResetData();
+
+        for (int i = 0; i < sentenceRefreshEvents.Length; i++)
+            sentenceRefreshEvents[i].RemoveListener(ResetSentenceData);
     }
 
     private void PlayAudio(AudioClip _audioClip)
     {
         audioSource.clip = _audioClip;
         audioSource.Play();
+    }
+
+    private void ResetSentenceData()
+    {
+        foreach (SentenceData _data in modifiedSentenceData) _data.ResetData();
     }
 }
 

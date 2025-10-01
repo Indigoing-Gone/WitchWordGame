@@ -17,5 +17,5 @@ MonoBehaviour:
     asset: {fileID: 102900000, guid: 76e2f89f46207ab45bee9d040b028913, type: 3}
     guid: 76e2f89f46207ab45bee9d040b028913
   neighbors:
-  - asset: {fileID: 102900000, guid: 726e72c639e6a80439b14016abf6d8f3, type: 3}
-    guid: 726e72c639e6a80439b14016abf6d8f3
+  - asset: {fileID: 102900000, guid: 207f42ed9d3effd4288cc515379d51d4, type: 3}
+    guid: 207f42ed9d3effd4288cc515379d51d4

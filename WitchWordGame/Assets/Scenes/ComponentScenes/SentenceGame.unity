@@ -890,6 +890,7 @@ MonoBehaviour:
   spells:
   - {fileID: 11400000, guid: 7c4c7823fc9fe2947825c1b9de306502, type: 2}
   - {fileID: 11400000, guid: 0925989fe4e8d104492328efe6b0faca, type: 2}
+  - {fileID: 11400000, guid: 154755f812c89d042b94727a5a563a92, type: 2}
   maxMana: 3
   spellProgression:
   - {fileID: 11400000, guid: 0673c76680fd64b4f96109a624778ed9, type: 2}

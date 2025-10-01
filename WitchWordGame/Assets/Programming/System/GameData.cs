@@ -7,8 +7,8 @@ public class GameData : MonoBehaviour
     private AudioSource audioSource;
 
     [SerializeField] private GameState gameState;
-    private HashSet<MissionData> modifiedMissionData;
-    private HashSet<SentenceData> modifiedSentenceData;
+    [SerializeField] private List<MissionData> modifiedMissionData;
+    [SerializeField] private List<SentenceData> modifiedSentenceData;
     [SerializeField] private MissionVisualData[] visualDatas;
 
     [SerializeField] private GameEvent_Audio audioOneShot;

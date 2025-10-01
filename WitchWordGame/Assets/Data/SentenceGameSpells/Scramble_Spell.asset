@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3684abce2d8a209429b78b8bf92f680c, type: 3}
-  m_Name: RepeatSlow_Spell
+  m_Name: Scramble_Spell
   m_EditorClassIdentifier: 
-  input: {fileID: 11400000, guid: 5a60b5899c8ded24a8a79caf708cd871, type: 2}
-  spellName: Repeat Slow
-  chanceOfSuccess: 0.5
-  numberOfWordsChecked: 0.8
-  spellType: 1
+  input: {fileID: 11400000, guid: fd8f552e012386b4cad9307da73ce734, type: 2}
+  spellName: Scramble
+  chanceOfSuccess: 1
+  numberOfWordsChecked: 0.1
+  spellType: 2
   manaCost: 2

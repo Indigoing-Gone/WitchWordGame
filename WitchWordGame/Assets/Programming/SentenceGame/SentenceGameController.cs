@@ -16,7 +16,6 @@ public class SentenceGameController : MonoBehaviour
     [Header("Spell Parameters")]
     [SerializeField] private SentenceSpell[] spells;
     [SerializeField] private int maxMana = 3;
-    [SerializeField] private int currentMana;
 
     public static event Action SentenceGameEntered;
     public static event Action SentenceGameExited;
@@ -69,27 +68,31 @@ public class SentenceGameController : MonoBehaviour
 
         sentenceData.sentenceMana -= _spell.manaCost;
 
-        List<int> _selectedWordIndicies = SelectWords(_spell.numberOfWordsChecked);
+        List<int> _selectedWordIndicies = SelectWords(_spell.numberOfWordsChecked, _spell.chanceOfSuccess);
 
-        if (_spell.spellType == SpellType.AddClue) AttemptAddClues(_selectedWordIndicies, _spell.chanceOfSuccess);
+        for (int i = 0; i < _selectedWordIndicies.Count; i++)
+        {
+            if (_spell.spellType == SpellType.AddClue)
+                sentenceData.IncrementCluesUnlocked(_selectedWordIndicies[i]);
+            if (_spell.spellType == SpellType.Scramble)
+                sentenceData.RevealScramble(_selectedWordIndicies[i]);
+        }
     }
 
-    private List<int> SelectWords(float numberOfWordsChecked)
+    private List<int> SelectWords(float numberOfWordsChecked, float _chanceOfSuccess)
     {
         List<int> _optionIndicies = sentenceData.WordIndiciesWithData;
         Shuffle(_optionIndicies);
         int _optionsSelected = (int)Mathf.Ceil(numberOfWordsChecked * _optionIndicies.Count);
-        
-        return _optionIndicies.Take(_optionsSelected).ToList();
-    }
 
-    private void AttemptAddClues(List<int> _selectedWordsIndicies, float _chanceOfSuccess)
-    {
+        List<int> _selectedIndicies = _optionIndicies.Take(_optionsSelected).ToList();
+        List<int> _selectedWords = new();
+
         Random _rng = new();
-        
-        for (int i = 0;  i < _selectedWordsIndicies.Count; i++)
+
+        for (int i = 0; i < _selectedIndicies.Count; i++)
         {
-            int _wordIndex = _selectedWordsIndicies[i];
+            int _wordIndex = _selectedIndicies[i];
 
             double _diceRoll = _rng.NextDouble();
             if (_diceRoll > _chanceOfSuccess)
@@ -100,11 +103,13 @@ public class SentenceGameController : MonoBehaviour
 
             Debug.Log($"Success on word {_wordIndex}");
 
-            sentenceData.IncrementCluesUnlocked(_wordIndex);
+            _selectedWords.Add(_wordIndex);
         }
+
+        return _selectedWords;
     }
 
-    private void Shuffle<T>(List<T> _list)
+    static public void Shuffle<T>(List<T> _list)
     {
         Random _rng = new();
         int n = _list.Count;

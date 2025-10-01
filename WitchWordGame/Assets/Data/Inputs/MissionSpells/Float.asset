@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b37d8ba47810a48a4b69062c0c2a1e, type: 3}
   m_Name: Float
   m_EditorClassIdentifier: 
-  triggerInput: 
-  activeState: 0
+  triggerInput: 5436721
+  activeState: 1
   isActive: 0

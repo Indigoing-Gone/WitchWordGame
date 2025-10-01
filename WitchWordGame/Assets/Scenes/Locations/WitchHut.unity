@@ -231,6 +231,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1299163083684043226, guid: 9c472a861a94ab647b18d1f53ca77a43, type: 3}
+      propertyPath: missionData
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f94e974308972e428d52785c6b7b6d5, type: 2}
+    - target: {fileID: 1299163083684043226, guid: 9c472a861a94ab647b18d1f53ca77a43, type: 3}
+      propertyPath: startMissionEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 90b29291f3a13ec4682cef23d415aec6, type: 2}
     - target: {fileID: 1375071820038800908, guid: 9c472a861a94ab647b18d1f53ca77a43, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.92

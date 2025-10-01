@@ -51,6 +51,7 @@ public class SentenceGameController : MonoBehaviour
         sentenceVisuals.CreateSentenceVisuals(sentenceData);
 
         if(sentenceData.sentenceMana == -1) sentenceData.sentenceMana = maxMana;
+        sentenceVisuals.ShowMana(sentenceData.sentenceMana);
 
         for (int i = 0; i < spells.Count; i++) spells[i].CastingSpell += ProcessSpell;
 
@@ -75,6 +76,7 @@ public class SentenceGameController : MonoBehaviour
         }
 
         sentenceData.sentenceMana -= _spell.manaCost;
+        sentenceVisuals.ShowMana(sentenceData.sentenceMana);
 
         List<int> _selectedWordIndicies = SelectWords(_spell.numberOfWordsChecked, _spell.chanceOfSuccess);
 

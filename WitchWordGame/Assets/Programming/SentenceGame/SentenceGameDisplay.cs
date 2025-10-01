@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class SentenceGameDisplay : MonoBehaviour
     [SerializeField] private GameObject wordVisualPrefab;
     [SerializeField] private GameObject sentenceGameBackground;
     [SerializeField] private GameObject sentenceGameUI;
+    [SerializeField] private TextMeshProUGUI manaText;
 
     private void OnEnable()
     {
@@ -37,6 +39,11 @@ public class SentenceGameDisplay : MonoBehaviour
         foreach (Transform child in sentenceContainer.transform) Destroy(child.gameObject);
         sentenceGameBackground.SetActive(false);
         sentenceGameUI.SetActive(false);
+    }
+
+    public void ShowMana(int _mana)
+    {
+        manaText.text = _mana.ToString();
     }
 
     private void RebuildLayout()

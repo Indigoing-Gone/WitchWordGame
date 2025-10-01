@@ -337,17 +337,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2882079290910717940, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
+      propertyPath: m_text
+      value: 'Changes a magical object to the desired color.
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 3003111074368089489, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name
       value: chromatic_page Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 676.9359
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 51.9731
       objectReference: {fileID: 0}
     - target: {fileID: 8514969641009636893, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name

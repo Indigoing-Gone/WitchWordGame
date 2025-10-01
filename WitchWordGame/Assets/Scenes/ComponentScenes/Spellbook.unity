@@ -1146,6 +1146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1141156594}
     m_Modifications:
+    - target: {fileID: 1468200816965655451, guid: 8374c37f4cfe16842ad64d507cb58317, type: 3}
+      propertyPath: m_text
+      value: Blooms of Prosperity
+      objectReference: {fileID: 0}
     - target: {fileID: 1624818858583558838, guid: 8374c37f4cfe16842ad64d507cb58317, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1397,6 +1401,10 @@ PrefabInstance:
     - target: {fileID: 1375725104558818884, guid: fba8b970f51620940b493af06909807a, type: 3}
       propertyPath: m_Name
       value: wizbang_page Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375725104558818884, guid: fba8b970f51620940b493af06909807a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2388654871524311458, guid: fba8b970f51620940b493af06909807a, type: 3}
       propertyPath: m_Pivot.x

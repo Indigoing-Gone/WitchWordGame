@@ -302,8 +302,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: 0
+  visualDatas:
+  - {fileID: 11400000, guid: 34e3b704c73079c40904cfe49b988206, type: 2}
+  - {fileID: 11400000, guid: ce39ee771b77e804b89cfdabfdb70e67, type: 2}
+  - {fileID: 11400000, guid: 562d6dd84b28cc54fa78b7125b242706, type: 2}
   audioOneShot: {fileID: 11400000, guid: 9327430f6d30fff4a8e828d5061efe55, type: 2}
-  sentenceRefreshEvents: []
+  sentenceRefreshEvents:
+  - {fileID: 11400000, guid: 99e9a144c826e9848b1ab5d014a0c2ae, type: 2}
+  - {fileID: 11400000, guid: 3084b1da0119c764a8e452770a715792, type: 2}
+  - {fileID: 11400000, guid: 639ce217238c92845979e1a0cd2fa16c, type: 2}
 --- !u!82 &1196691869
 AudioSource:
   m_ObjectHideFlags: 0

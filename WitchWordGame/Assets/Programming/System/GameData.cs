@@ -9,6 +9,7 @@ public class GameData : MonoBehaviour
     [SerializeField] private GameState gameState;
     private HashSet<MissionData> modifiedMissionData;
     private HashSet<SentenceData> modifiedSentenceData;
+    [SerializeField] private MissionVisualData[] visualDatas;
 
     [SerializeField] private GameEvent_Audio audioOneShot;
     [SerializeField] private GameEvent_Void[] sentenceRefreshEvents;
@@ -56,6 +57,7 @@ public class GameData : MonoBehaviour
     {
         ResetSentenceData();
         foreach (MissionData _data in modifiedMissionData) _data.ResetData();
+        for (int i = 0; i < visualDatas.Length; i++) visualDatas[i].ResetData();
 
         for (int i = 0; i < sentenceRefreshEvents.Length; i++)
             sentenceRefreshEvents[i].RemoveListener(ResetSentenceData);

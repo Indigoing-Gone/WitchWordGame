@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
+  m_Name: Alba_Intro
+  m_EditorClassIdentifier: 
+  lines:
+  - name: Miss Alba
+    text: "Oh Irma! Good morning, dear. I must speak with you, if you have a moment.\r"
+    bark: {fileID: 0}
+  - name: Irma
+    text: "Yes of course! Did I do something wrong?\r"
+    bark: {fileID: 0}
+  - name: Miss Alba
+    text: "No. Quite the opposite, in fact. I believe that you are nearly ready to
+      graduate from this apprenticeship. Your skills have grown beyond what I can
+      teach directly.\r"
+    bark: {fileID: 0}
+  - name: Irma
+    text: "O-oh! Are you sure? You think I\u2019m ready?\r"
+    bark: {fileID: 0}
+  - name: Miss Alba
+    text: "I\u2019ve prepared you as much as I am able. Readiness is something you
+      must muster yourself.\r\r"
+    bark: {fileID: 0}
+  - name: Irma
+    text: "Um. Ok? What do I have to do?\r"
+    bark: {fileID: 0}
+  - name: Miss Alba
+    text: "It\u2019s quite simple; you\u2019ll be filling the role of town witch
+      today. Make yourself available to help with the townspeople\u2019s troubles.
+      By my scrying, I predict three tasks for you today. Solve these issues successfully
+      and I shall declare you a true witch by the day\u2019s end. \r"
+    bark: {fileID: 0}
+  - name: Irma
+    text: "Three problems, three magical solutions, got it.\r"
+    bark: {fileID: 0}
+  - name: Miss Alba
+    text: "Remember to carefully read your spellbook and choose your spells deliberately.
+      Listen to your charge, determine what they want, and then make sure to provide
+      exactly that. I shall not accept anything less. \r"
+    bark: {fileID: 0}
+  - name: Miss Alba
+    text: "Now be off. I sense that I may have a trying day, despite the circumstances.
+      Return to me if you succeed. Should you fail, come to me and I may give you
+      another chance.\r"
+    bark: {fileID: 0}
+  - name: Narrator
+    text: "Your loom, your spellcasting focus, is a comforting weight on your belt
+      as you set out to face the day. You can almost sense the latent power in the
+      patterns you have yet to weave today.\r"
+    bark: {fileID: 0}
+  nextConversation: {fileID: 0}
+  triggerSentenceGame: 0

@@ -7,10 +7,12 @@ public class SentenceGameDisplay : MonoBehaviour
     [SerializeField] private RectTransform sentenceContainer;
     [SerializeField] private GameObject wordVisualPrefab;
     [SerializeField] private GameObject sentenceGameBackground;
+    [SerializeField] private GameObject sentenceGameUI;
 
     private void OnEnable()
     {
         sentenceGameBackground.SetActive(false);
+        sentenceGameUI.SetActive(false);
     }
 
     public void CreateSentenceVisuals(SentenceData _sentenceData)
@@ -26,6 +28,7 @@ public class SentenceGameDisplay : MonoBehaviour
         }
 
         sentenceGameBackground.SetActive(true);
+        sentenceGameUI.SetActive(true);
         RebuildLayout();
     }
 
@@ -33,6 +36,7 @@ public class SentenceGameDisplay : MonoBehaviour
     {
         foreach (Transform child in sentenceContainer.transform) Destroy(child.gameObject);
         sentenceGameBackground.SetActive(false);
+        sentenceGameUI.SetActive(false);
     }
 
     private void RebuildLayout()

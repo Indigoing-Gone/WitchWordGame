@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd29aeac57fef947b36a743840f2c0e, type: 3}
+  m_Name: Hilda_Quest
+  m_EditorClassIdentifier: 
+  missionEvents:
+  - missionStatus: 0
+    conversation: {fileID: 11400000, guid: d2fad25d4e5b26446836df12615c1c34, type: 2}
+    progressEvent: {fileID: 11400000, guid: 7c7e2f07d8a479e43be3448d6d92626a, type: 2}
+  - missionStatus: 1
+    conversation: {fileID: 11400000, guid: 0bbadbc8cf7991d45b13e0265649bc93, type: 2}
+    progressEvent: {fileID: 11400000, guid: 3838540e24b8b224a89fd5df27ad661f, type: 2}
+  - missionStatus: 2
+    conversation: {fileID: 11400000, guid: ee871c49a6cd9ce43a351e45422e6b71, type: 2}
+    progressEvent: {fileID: 0}
+  activeMissionEventId: 0

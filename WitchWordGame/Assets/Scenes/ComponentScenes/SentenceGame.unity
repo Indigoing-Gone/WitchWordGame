@@ -349,7 +349,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7c4c7823fc9fe2947825c1b9de306502, type: 2}
   - {fileID: 11400000, guid: 0925989fe4e8d104492328efe6b0faca, type: 2}
   maxMana: 3
-  currentMana: 0
+  spellProgression:
+  - {fileID: 11400000, guid: 0673c76680fd64b4f96109a624778ed9, type: 2}
+  spellProgressionEvents:
+  - {fileID: 11400000, guid: 1b2a67559d1534842848c8473fbf2d1d, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &746242868
 MonoBehaviour:
   m_ObjectHideFlags: 0

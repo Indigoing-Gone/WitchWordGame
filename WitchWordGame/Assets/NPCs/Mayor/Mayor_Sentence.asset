@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ad09beb600793409c31f773a97ea87, type: 3}
   m_Name: Mayor_Sentence
   m_EditorClassIdentifier: 
-  sentence: I think that a magnificent firework display is just what this town needs
-    right now!
+  sentence: I think that a magnificent firework display is just what this town needs!
   words:
   - word: I
     hasClues: 0
@@ -25,7 +24,7 @@ MonoBehaviour:
   - word: think
     hasClues: 1
     clues:
-    - verb
+    - Verb
     - presume
     scramble: 
     cluesUnlocked: 0
@@ -49,19 +48,19 @@ MonoBehaviour:
     - Adjective
     - baronial
     scramble: 
-    cluesUnlocked: 1
+    cluesUnlocked: 0
   - word: firework
     hasClues: 1
     clues:
     - Noun
     - pyrotechnic
     scramble: 
-    cluesUnlocked: 1
+    cluesUnlocked: 0
   - word: display
     hasClues: 1
     clues:
     - Noun
-    - presentation
+    - spectacle
     scramble: 
     cluesUnlocked: 0
   - word: is
@@ -72,10 +71,10 @@ MonoBehaviour:
     scramble: 
     cluesUnlocked: 0
   - word: just
-    hasClues: 0
+    hasClues: 1
     clues:
-    - Part of Speech
-    - Synonym
+    - Adverb
+    - exactly
     scramble: 
     cluesUnlocked: 0
   - word: what
@@ -96,30 +95,16 @@ MonoBehaviour:
     hasClues: 1
     clues:
     - Noun
-    - hamlet
+    - settlement
     scramble: 
-    cluesUnlocked: 1
+    cluesUnlocked: 0
   - word: needs
     hasClues: 1
     clues:
-    - verb
-    - warrants
+    - Verb
+    - requires
     scramble: 
-    cluesUnlocked: 1
-  - word: right
-    hasClues: 1
-    clues:
-    - adverb
-    - squarely
-    scramble: 
-    cluesUnlocked: 2
-  - word: now
-    hasClues: 1
-    clues:
-    - Adverb
-    - at present
-    scramble: 
-    cluesUnlocked: 1
+    cluesUnlocked: 0
   - word: '!'
     hasClues: 0
     clues:
@@ -127,5 +112,5 @@ MonoBehaviour:
     - Synonym
     scramble: 
     cluesUnlocked: 0
-  spokenSentence: {fileID: 0}
+  spokenSentence: {fileID: 8300000, guid: 626b9c61329b77048a62223fae74e8f7, type: 3}
   sentenceMana: 0

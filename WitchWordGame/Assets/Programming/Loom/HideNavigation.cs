@@ -9,6 +9,9 @@ public class HideNavigation : MonoBehaviour
     {
         SentenceGameController.SentenceGameEntered += () => DisplayNavigation(false);
         SentenceGameController.SentenceGameExited += () => DisplayNavigation(true);
+
+        SpellbookController.SpellbookOpened += () => DisplayNavigation(false);
+        SpellbookController.SpellbookClosed += () => DisplayNavigation(true);
     }
 
     private void DisplayNavigation(bool _state)

@@ -12,7 +12,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ad09beb600793409c31f773a97ea87, type: 3}
   m_Name: Pepin_Sentence
   m_EditorClassIdentifier: 
-  sentence: 
-  words: []
-  spokenSentence: {fileID: 0}
+  sentence: "I\u2019d like some blue flowers to give her!"
+  words:
+  - word: "I\u2019d"
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: like
+    hasClues: 1
+    clues:
+    - Verb
+    - appreciate
+    scramble: 
+    cluesUnlocked: 0
+  - word: some
+    hasClues: 1
+    clues:
+    - Adjective
+    - several
+    scramble: 
+    cluesUnlocked: 0
+  - word: blue
+    hasClues: 1
+    clues:
+    - Color
+    - lapis
+    scramble: 
+    cluesUnlocked: 0
+  - word: flowers
+    hasClues: 1
+    clues:
+    - Plural noun
+    - nosegay
+    scramble: 
+    cluesUnlocked: 0
+  - word: to
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: give
+    hasClues: 1
+    clues:
+    - Verb
+    - provide
+    scramble: 
+    cluesUnlocked: 0
+  - word: her
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: '!'
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  spokenSentence: {fileID: 8300000, guid: 811585dba488d8c42af4b08ffbe0f586, type: 3}
   sentenceMana: 0

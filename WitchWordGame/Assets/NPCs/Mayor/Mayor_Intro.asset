@@ -12,6 +12,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
   m_Name: Mayor_Intro
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - name: Narrator
+    text: "The afternoon brings a slight chill with it\u2019s arrival, but the day
+      remains pleasantly warm. The town square is almost never very busy, but there
+      are a number of townsfolk out on errands or resting on benches.\r"
+    bark: {fileID: 0}
+  - name: Narrator
+    text: "The serenity of the scene is broken by a man--recognizable as the mayor,
+      even from a distance--striding in your direction with great purpose. Such great
+      purpose, in fact, that he very nearly bowls over a passing couple as he approaches.\r"
+    bark: {fileID: 0}
+  - name: Mayor
+    text: Good afternoon, little witch! Very nearly just who I was looking for right
+      now! Fortuitous!
+    bark: {fileID: 8300000, guid: 4f4a7532f20e9bd4eb322c3e271d4cc7, type: 3}
+  - name: Irma
+    text: Oh, hello, Mr. Mayor! You were looking for almost me? Is there something
+      I can do for you?
+    bark: {fileID: 8300000, guid: 00b5b67a665eccb47b8b3c18f07c4ca3, type: 3}
+  - name: Mayor
+    text: "Yes, quite. I would have been looking for your good teacher, but --unless
+      my sources deceive me--I believe I am to understand that her daily duties have
+      fallen upon you today. Am I correct?\r"
+    bark: {fileID: 8300000, guid: 38a25651b8c5c034ca375e53a65b6c81, type: 3}
+  - name: Irma
+    text: "Uhm! Yes? I\u2019m trying to complete my apprenticeship. Today\u2019s
+      the big test day."
+    bark: {fileID: 8300000, guid: ca9c082444d1d18468ca98b0712b490f, type: 3}
+  - name: Mayor
+    text: "Capital, capital\u2026 Well I wish you luck, little witch. And I have
+      a request for you, if you\u2019ll allow me.\r"
+    bark: {fileID: 8300000, guid: 4f4a7532f20e9bd4eb322c3e271d4cc7, type: 3}
+  - name: Irma
+    text: "O-oh! Of course! Whatever you need! How can I help?\r"
+    bark: {fileID: 8300000, guid: 4525c0c90039e524e9d8e0428219e518, type: 3}
+  - name: Mayor
+    text: "Well, I want to do something nice for the town. Organize something celebratory.
+      It\u2019s been a good year, and I\u2019d like to acknowledge it.\r"
+    bark: {fileID: 8300000, guid: 1631f7448644f874998fc5bbc42052d9, type: 3}
+  - name: Irma
+    text: "That sounds\u2026public\u2026 What did you have in mind?"
+    bark: {fileID: 8300000, guid: 7fc6f11cc0785df43a72e5e6f1cdfe22, type: 3}
+  - name: Mayor
+    text: "I\u2019ll admit that I don\u2019t have much of a mind for the execution
+      of things; I\u2019m more of a planning man, myself, you see. And that\u2019s
+      where you come in!"
+    bark: {fileID: 8300000, guid: 56573207f8de0124e994467b7172f337, type: 3}
+  - name: Mayor
+    text: "I\u2019ve a rather special idea in mind, but it\u2019s going to need someone
+      with your magical expertise. "
+    bark: {fileID: 8300000, guid: 7ffd92f53078ffb439119066845c4342, type: 3}
+  - name: Irma
+    text: "Ok\u2026 but what were you thinking? Exactly?"
+    bark: {fileID: 8300000, guid: 7ffd92f53078ffb439119066845c4342, type: 3}
+  - name: Mayor
+    text: "Yes, yes, I\u2019m getting there, little miss! Always a hustle and bustle
+      with you young folk, rushing about this way and that, never a moment\u2019s
+      peace around here with you lot! Always something of the utmost import to run
+      off to and whatnot\u2026where was I?"
+    bark: {fileID: 8300000, guid: f87da8d3cd1011d458b23593dc491674, type: 3}
+  - name: Mayor
+    text: 'Ah yes! Your special job! This will speak to both my reputation and yours,
+      so listen here: '
+    bark: {fileID: 8300000, guid: 7ffd92f53078ffb439119066845c4342, type: 3}
   nextConversation: {fileID: 0}
-  triggerSentenceGame: 0
+  triggerSentenceGame: 1

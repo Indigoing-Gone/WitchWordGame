@@ -12,6 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
   m_Name: Mayor_Outro
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - name: Mayor
+    text: "Most excellent, little witch! I dare say that this may secure my reputation
+      as a \u201CMayor for the people!\u201D"
+    bark: {fileID: 8300000, guid: 357a2c363af1dd840974b24c5befda43, type: 3}
+  - name: Irma
+    text: "I\u2019m just happy that I could help!"
+    bark: {fileID: 8300000, guid: 02a172848fbce934a9739e83f4715d3f, type: 3}
+  - name: Mayor
+    text: "Well I dare say that you should be awfully proud of yourself. You\u2019ve
+      come very far--even just since I\u2019ve seen you last! You\u2019ll be an excellent
+      town witch.\r\n"
+    bark: {fileID: 8300000, guid: 62f532a91b8f8e14e9e25c04fcb26d44, type: 3}
+  - name: Irma
+    text: "Miss Alba *did* say that I would have three tasks to complete, so I think
+      I might be graduated now?\r"
+    bark: {fileID: 8300000, guid: 9ab7a754084e9ee49abfe598b892701e, type: 3}
+  - name: Mayor
+    text: "You have my most sincere congratulations, then, madame witch! I do hope
+      you\u2019ll decide to stay local! Two full-fledged witches in my town? Imagine
+      the ratings!\r"
+    bark: {fileID: 8300000, guid: 4f4a7532f20e9bd4eb322c3e271d4cc7, type: 3}
+  - name: Mayor
+    text: "That, and I do so enjoy your company, as vexing as I find your generation.\r"
+    bark: {fileID: 8300000, guid: ffd3d91364f49bd4c8f0f76409057cd1, type: 3}
+  - name: Irma
+    text: "Woah! It\u2019s a lot later than I thought! I better be getting back to
+      Miss Alba now. Thanks for letting me help!\r"
+    bark: {fileID: 8300000, guid: 811a45741a691cd489cc8504306ea8bb, type: 3}
+  - name: Mayor
+    text: "Yes, yes, run along. I\u2019ll hope to see you soon, then!"
+    bark: {fileID: 8300000, guid: 4d1fdf2f0a4791147890d080ee87f1f1, type: 3}
   nextConversation: {fileID: 0}
   triggerSentenceGame: 0

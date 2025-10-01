@@ -12,6 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
   m_Name: Pepin_Outro
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - name: Irma
+    text: "How\u2019s that? Is that ok? That\u2019s what you wanted, right?"
+    bark: {fileID: 8300000, guid: e9c023a072d70d647a567415ad1acb97, type: 3}
+  - name: Pepin
+    text: "That\u2019s exactly it! She\u2019s gonna love it!"
+    bark: {fileID: 8300000, guid: f1b2f18586f0b264c92a970b6260e4ae, type: 3}
+  - name: Pepin
+    text: 'Almost as good as Miss Alba would have done it! '
+    bark: {fileID: 8300000, guid: e8f64ab1eb188d0449f391f1613cd45b, type: 3}
+  - name: Irma
+    text: "I\u2019m choosing to take that as a compliment!"
+    bark: {fileID: 8300000, guid: 12bd39f2db56be44a8a9c0bce612c102, type: 3}
+  - name: Irma
+    text: "Either way, that\u2019s one satisfied customer in the books! Just two
+      more and my apprenticeship will be officially completed!"
+    bark: {fileID: 8300000, guid: 573ca545d679dcd42849ca75c5c27b49, type: 3}
   nextConversation: {fileID: 0}
   triggerSentenceGame: 0

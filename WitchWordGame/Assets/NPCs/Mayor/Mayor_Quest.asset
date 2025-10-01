@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd29aeac57fef947b36a743840f2c0e, type: 3}
   m_Name: Mayor_Quest
   m_EditorClassIdentifier: 
-  missionEvents: []
+  missionEvents:
+  - missionStatus: 0
+    conversation: {fileID: 11400000, guid: 07a0d098001037b4f8678ed8603a94b6, type: 2}
+    progressEvent: {fileID: 0}
+  - missionStatus: 2
+    conversation: {fileID: 11400000, guid: 4c2308b5bc38cb94e9faad18750ced93, type: 2}
+    progressEvent: {fileID: 0}
   activeMissionEventId: 0

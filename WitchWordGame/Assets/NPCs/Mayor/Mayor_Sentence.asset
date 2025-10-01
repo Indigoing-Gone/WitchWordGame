@@ -12,7 +12,120 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ad09beb600793409c31f773a97ea87, type: 3}
   m_Name: Mayor_Sentence
   m_EditorClassIdentifier: 
-  sentence: 
-  words: []
+  sentence: I think that a magnificent firework display is just what this town needs
+    right now!
+  words:
+  - word: I
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: think
+    hasClues: 1
+    clues:
+    - verb
+    - presume
+    scramble: 
+    cluesUnlocked: 0
+  - word: that
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: a
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: magnificent
+    hasClues: 1
+    clues:
+    - Adjective
+    - baronial
+    scramble: 
+    cluesUnlocked: 0
+  - word: firework
+    hasClues: 1
+    clues:
+    - Noun
+    - pyrotechnic
+    scramble: 
+    cluesUnlocked: 0
+  - word: display
+    hasClues: 1
+    clues:
+    - Noun
+    - presentation
+    scramble: 
+    cluesUnlocked: 0
+  - word: is
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: just
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: what
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: this
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: town
+    hasClues: 1
+    clues:
+    - Noun
+    - hamlet
+    scramble: 
+    cluesUnlocked: 0
+  - word: needs
+    hasClues: 1
+    clues:
+    - verb
+    - warrants
+    scramble: 
+    cluesUnlocked: 0
+  - word: right
+    hasClues: 1
+    clues:
+    - squarely
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: now
+    hasClues: 1
+    clues:
+    - Adverb
+    - at present
+    scramble: 
+    cluesUnlocked: 0
+  - word: '!'
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
   spokenSentence: {fileID: 0}
   sentenceMana: 0

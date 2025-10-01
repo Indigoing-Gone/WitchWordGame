@@ -12,6 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
   m_Name: Hilda_Intro
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - name: Narrator
+    text: "Your success earlier today gave you a surge of confidence you\u2019ve
+      never felt before. Can someone like you really make a difference in people\u2019s
+      lives? Are you more than just a burden to Miss Alba and the villagers? Questions
+      like these bounce around your head. Soon, you find yourself at the door of
+      your next client. At this moment, your nerves come back\r"
+    bark: {fileID: 0}
+  - name: Irma
+    text: Is anyone home?
+    bark: {fileID: 8300000, guid: 4525c0c90039e524e9d8e0428219e518, type: 3}
+  - name: Hilda
+    text: "Why, hello, dear! Miss Alba told me you\u2019d be filling in for her today.
+      Isn\u2019t that exciting?"
+    bark: {fileID: 8300000, guid: e92f2bc63e06b704c8ca7a2a1adec91c, type: 3}
+  - name: Irma
+    text: "I\u2026 On my witch\u2019s honor, I\u2019ll try my best!"
+    bark: {fileID: 8300000, guid: ed4cf23ebb653134f9a57c1dbf957a71, type: 3}
+  - name: Hilda
+    text: "That\u2019s the spirit, dear."
+    bark: {fileID: 8300000, guid: 62036a56cc18a9949ab4515326dd1724, type: 3}
+  - name: Irma
+    text: "How can I help you today\u2026?\r"
+    bark: {fileID: 8300000, guid: 3c1a7d5c0707a80439b312d85a0fb4ae, type: 3}
+  - name: Hilda
+    text: "Well you see, it\u2019s these old bones of mine. There\u2019s an awful
+      draft in my cottage, and it makes my joints ache terribly."
+    bark: {fileID: 8300000, guid: c63c2fe9f27240d43bd43e94a7418d15, type: 3}
+  - name: Irma
+    text: "Oh, I don\u2019t know if I\u2019m good enough to fix someone\u2019s bones."
+    bark: {fileID: 8300000, guid: 7fc6f11cc0785df43a72e5e6f1cdfe22, type: 3}
+  - name: Hilda
+    text: "I don\u2019t need anything that fancy, silly!"
+    bark: {fileID: 8300000, guid: 31e2234d5d51860438e4d6ddfe5f7f17, type: 3}
+  - name: Narrator
+    text: Hilda hands you a rock.
+    bark: {fileID: 0}
   nextConversation: {fileID: 0}
-  triggerSentenceGame: 0
+  triggerSentenceGame: 1

@@ -12,6 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
   m_Name: Hilda_Outro
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - name: Hilda
+    text: "Oh, thank you so much, dear! This is perfect!\r"
+    bark: {fileID: 8300000, guid: 4c1dd0911181bd241a6c28b3b459f03f, type: 3}
+  - name: Irma
+    text: "It was no trouble at all!\r"
+    bark: {fileID: 8300000, guid: 9ab7a754084e9ee49abfe598b892701e, type: 3}
+  - name: Narrator
+    text: "You smile as you realize these are words you truly mean. There\u2019s
+      only one request left until everyone recognizes you as a full witch."
+    bark: {fileID: 0}
   nextConversation: {fileID: 0}
   triggerSentenceGame: 0

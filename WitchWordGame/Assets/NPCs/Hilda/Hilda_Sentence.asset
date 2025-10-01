@@ -99,4 +99,4 @@ MonoBehaviour:
     scramble: 
     cluesUnlocked: 0
   spokenSentence: {fileID: 8300000, guid: bf6ed26677937074ba087bf4ba2b7b7a, type: 3}
-  sentenceMana: 0
+  sentenceMana: -1

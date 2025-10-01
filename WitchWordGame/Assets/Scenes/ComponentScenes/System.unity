@@ -302,6 +302,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState: 0
+  modifiedMissionData: []
+  modifiedSentenceData:
+  - {fileID: 11400000, guid: df4aaebe03e32804a87eb4f85c7492e7, type: 2}
+  - {fileID: 11400000, guid: c5593faafbb841d4cbdc9664e22d7d2f, type: 2}
+  - {fileID: 11400000, guid: 6259ff0441301ac46a33b4074b8cb90b, type: 2}
   visualDatas:
   - {fileID: 11400000, guid: 34e3b704c73079c40904cfe49b988206, type: 2}
   - {fileID: 11400000, guid: ce39ee771b77e804b89cfdabfdb70e67, type: 2}
@@ -452,6 +457,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20b0e5f52b15a844b9145dfe6c2bd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  switchers:
+  - {fileID: 11400000, guid: da1bced30a058a84daa0beee67498603, type: 2}
+  - {fileID: 11400000, guid: b224017dd2a2220419dc47f7745f929c, type: 2}
+  - {fileID: 11400000, guid: 0bed7df5ebabe6f4d94ec22af4adf85d, type: 2}
+  - {fileID: 11400000, guid: dae4454a9fa290a4db19afbe002f4d0b, type: 2}
+  - {fileID: 11400000, guid: d271bddd7f401784fa5acf6622f3ae89, type: 2}
   gameplaySystemScenes:
   - asset: {fileID: 102900000, guid: 175037ade07d91144b087f956b074e6a, type: 3}
     guid: 175037ade07d91144b087f956b074e6a
@@ -464,6 +475,7 @@ MonoBehaviour:
   startScene:
     asset: {fileID: 102900000, guid: dd2563acd214a8748aa77e8fcda75085, type: 3}
     guid: dd2563acd214a8748aa77e8fcda75085
+  testObject: {fileID: 0}
 --- !u!1 &1684362823
 GameObject:
   m_ObjectHideFlags: 0

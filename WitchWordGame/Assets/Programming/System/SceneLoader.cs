@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    [SerializeField] private SceneSwitcher[] switchers;
     [SerializeField] private SceneReference[] gameplaySystemScenes;
     [SerializeField] private SceneReference startScene;
 
@@ -13,21 +14,17 @@ public class SceneLoader : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "System") return;
 
-#if UNITY_EDITOR
         await SceneManager.LoadSceneAsync("System", LoadSceneMode.Additive);
-#else
-        await SceneManager.LoadSceneAsync("System", LoadSceneMode.Single);
-#endif
     }
 
     private void OnEnable()
     {
-        SceneSwitcher.SwitchingScene += LoadScene;
+        for (int i = 0; i < switchers.Length; i++) switchers[i].SwitchingScene += LoadScene;
     }
 
     private void OnDisable()
     {
-        SceneSwitcher.SwitchingScene -= LoadScene;
+        for (int i = 0; i < switchers.Length; i++) switchers[i].SwitchingScene -= LoadScene;
     }
 
     private async void Awake()
@@ -36,22 +33,22 @@ public class SceneLoader : MonoBehaviour
 
         for (int i = 0; i < gameplaySystemScenes.Length; i++) await LoadSceneAdditive(gameplaySystemScenes[i]);
 
-#if UNITY_EDITOR
-        Scene _currentScene = SceneManager.GetActiveScene();
-        for (int i = 0; i < gameplaySystemScenes.Length; i++)
-        {
-            if (_currentScene.path == gameplaySystemScenes[i].Path || _currentScene.name == "System")
-            {
-                await LoadActiveScene(startScene);
-                return;
-            }
-        }
-#else
+        //Scene _currentScene = SceneManager.GetActiveScene();
+        //for (int i = 0; i < gameplaySystemScenes.Length; i++)
+        //{
+        //    if (_currentScene.path == gameplaySystemScenes[i].Path || _currentScene.name == "System")
+        //    {
+        //        await LoadActiveScene(startScene);
+        //        return;
+        //    }
+        //}
         await LoadActiveScene(startScene);
-#endif
     }
 
-    public async void LoadScene(SceneReference _scene) => await LoadActiveScene(_scene);
+    public async void LoadScene(SceneReference _scene)
+    {
+        await LoadActiveScene(_scene);
+    }
 
     public async Task LoadActiveScene(SceneReference _scene)
     {

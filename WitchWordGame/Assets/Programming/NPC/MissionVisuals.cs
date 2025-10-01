@@ -8,7 +8,6 @@ public class MissionVisuals : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log(visualData.Show);
         if (visualData.Show)
         {
             ShowVisuals(true);

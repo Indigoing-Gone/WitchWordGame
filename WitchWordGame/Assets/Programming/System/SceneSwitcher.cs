@@ -9,7 +9,7 @@ public class SceneSwitcher : ScriptableObject
     [SerializeField] private LoomReciever input;
     [SerializeField] private SceneReference target;
     [SerializeField] private SceneReference[] neighbors;
-    public static event Action<SceneReference> SwitchingScene;
+    public event Action<SceneReference> SwitchingScene;
 
     private void OnEnable() => input.InputRecieved += SwitchScene;
     private void OnDisable() => input.InputRecieved -= SwitchScene;
@@ -25,6 +25,8 @@ public class SceneSwitcher : ScriptableObject
                 break;
             }
         }
+
+        Debug.Log(inNeighbor);
 
         if (!inNeighbor) return;
 

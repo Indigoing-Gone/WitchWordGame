@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ad09beb600793409c31f773a97ea87, type: 3}
+  m_Name: Hilda_Sentence
+  m_EditorClassIdentifier: 
+  sentence: I just want a warm stone to keep in my bed.
+  words:
+  - word: I
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: just
+    hasClues: 1
+    clues:
+    - Adverb
+    - only
+    scramble: 
+    cluesUnlocked: 0
+  - word: want
+    hasClues: 1
+    clues:
+    - Verb
+    - desire
+    scramble: 
+    cluesUnlocked: 0
+  - word: a
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: warm
+    hasClues: 1
+    clues:
+    - Adjective
+    - summery
+    scramble: 
+    cluesUnlocked: 0
+  - word: stone
+    hasClues: 1
+    clues:
+    - Noun
+    - pebble
+    scramble: 
+    cluesUnlocked: 0
+  - word: to
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: keep
+    hasClues: 1
+    clues:
+    - Verb
+    - cloister
+    scramble: 
+    cluesUnlocked: 0
+  - word: in
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: my
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  - word: bed
+    hasClues: 1
+    clues:
+    - Noun
+    - bunk
+    scramble: 
+    cluesUnlocked: 0
+  - word: .
+    hasClues: 0
+    clues:
+    - Part of Speech
+    - Synonym
+    scramble: 
+    cluesUnlocked: 0
+  spokenSentence: {fileID: 0}
+  sentenceMana: 0

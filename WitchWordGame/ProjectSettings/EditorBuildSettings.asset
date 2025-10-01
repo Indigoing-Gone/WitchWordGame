@@ -6,17 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Programming/System/ComponentScenes/SentenceGame.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Programming/System/ComponentScenes/System.unity
-    guid: 791b449edcb4ed64099405bcfc1bcd73
-  - enabled: 1
-    path: Assets/Programming/System/ComponentScenes/Loom.unity
-    guid: 654ca55413589184f94c3b3484a73cde
-  - enabled: 1
-    path: Assets/Programming/System/ComponentScenes/Dialogue.unity
-    guid: a60ccfc9b2afc9148ab8214e77651441
+    path: Assets/Scenes/TitleScreen.unity
+    guid: dd2563acd214a8748aa77e8fcda75085
   - enabled: 1
     path: Assets/Scenes/Locations/WitchHut.unity
     guid: 76e2f89f46207ab45bee9d040b028913
@@ -29,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Locations/HouseRoadside.unity
     guid: 726e72c639e6a80439b14016abf6d8f3
-  - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
-    guid: dd2563acd214a8748aa77e8fcda75085
   - enabled: 1
     path: Assets/Scenes/ComponentScenes/Loom.unity
     guid: 175037ade07d91144b087f956b074e6a

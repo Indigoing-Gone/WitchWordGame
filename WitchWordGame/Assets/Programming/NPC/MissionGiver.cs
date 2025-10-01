@@ -4,10 +4,16 @@ using UnityEngine;
 [RequireComponent(typeof(Speaker))]
 public class MissionGiver : MonoBehaviour
 {
+    [Header("Data")]
     private Speaker speaker;
     [SerializeField] private MissionData missionData;
     [SerializeField] private SentenceData sentenceData;
+
+    [Header("Mission Events")]
     [SerializeField] private GameEvent_Void startMissionEvent;
+    [SerializeField] private GameEvent_Void endMissionEvent;
+
+    [Header("Input")]
     [SerializeField] private LoomReciever enterConversationInput;
 
     static public event Action<SentenceData> EnteringSentenceGame;
@@ -44,5 +50,6 @@ public class MissionGiver : MonoBehaviour
             StartingMission?.Invoke(missionData);
             startMissionEvent.TriggerEvent();
         }
+        else if (missionData.MissionStatus == MissionStatus.Completed) endMissionEvent.TriggerEvent();
     }
 }

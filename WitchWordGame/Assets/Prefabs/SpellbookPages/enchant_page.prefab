@@ -250,9 +250,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2882079290910717940, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
+      propertyPath: m_text
+      value: Turns a non-magic object magical.
+      objectReference: {fileID: 0}
     - target: {fileID: 3003111074368089489, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name
-      value: spellbook_page Variant
+      value: enchant_page
       objectReference: {fileID: 0}
     - target: {fileID: 3443238582245997661, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name
@@ -281,14 +285,6 @@ PrefabInstance:
     - target: {fileID: 5103828785789886814, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 152.728
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 664.8282
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 45.91931
       objectReference: {fileID: 0}
     - target: {fileID: 7732701819699852198, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_SizeDelta.x

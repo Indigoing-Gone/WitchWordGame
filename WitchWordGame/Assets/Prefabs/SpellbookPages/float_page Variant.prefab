@@ -255,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832990506107386714, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_text
-      value: Float
+      value: Feather Float
       objectReference: {fileID: 0}
     - target: {fileID: 1989618924364638839, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Pivot.x
@@ -336,6 +336,10 @@ PrefabInstance:
     - target: {fileID: 1989618924364638839, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882079290910717940, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
+      propertyPath: m_text
+      value: Makes something float to the height of a bird.
       objectReference: {fileID: 0}
     - target: {fileID: 3003111074368089489, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name

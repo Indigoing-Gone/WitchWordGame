@@ -310,7 +310,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1832990506107386714, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_text
-      value: Blooms of Prosperity
+      value: Blo
       objectReference: {fileID: 0}
     - target: {fileID: 1989618924364638839, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Pivot.x
@@ -392,29 +392,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2882079290910717940, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
+      propertyPath: m_text
+      value: Creates a patch of magical flowers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882079290910717940, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2882079290910717940, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 3003111074368089489, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name
-      value: spellbook_page Variant
+      value: bloom_page
       objectReference: {fileID: 0}
     - target: {fileID: 3443238582245997661, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name
       value: 'line_2 '
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 868.0927
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 124.8704
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 147.55151
-      objectReference: {fileID: 0}
-    - target: {fileID: 6695123702288631549, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -148.48328
       objectReference: {fileID: 0}
     - target: {fileID: 8514969641009636893, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name

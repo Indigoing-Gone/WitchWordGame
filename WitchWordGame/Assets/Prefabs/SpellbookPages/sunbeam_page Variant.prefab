@@ -112,6 +112,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2882079290910717940, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
+      propertyPath: m_text
+      value: Gently warms an object.
+      objectReference: {fileID: 0}
     - target: {fileID: 3003111074368089489, guid: b0c5b12e6b8126548b1b6a9f4cf38ea6, type: 3}
       propertyPath: m_Name
       value: sunbeam_page Variant

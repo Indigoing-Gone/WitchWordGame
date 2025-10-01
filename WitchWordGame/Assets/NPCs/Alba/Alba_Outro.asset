@@ -12,6 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
   m_Name: Alba_Outro
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - name: Miss Alba
+    text: "Good evening. I was quite taken with the surprise light show tonight.
+      Given the Mayor\u2019s propensity for spontaneous indulgences, I assume that
+      was your doing?"
+    bark: {fileID: 8300000, guid: 647ce75a316cfd34e87d4379147d8a16, type: 3}
+  - name: Irma
+    text: Yes! That was me! You liked it?
+    bark: {fileID: 8300000, guid: 06ee367c6aa9cee42936c27505fcf9db, type: 3}
+  - name: Miss Alba
+    text: Very much, indeed. Not only at your apparent magical aptitude, but it seemed
+      a portent of the excellence we are to expect from you in the future. I am very
+      proud to have been your teacher, and am prouder still to welcome you as a colleague.
+      Well done, Irma, consider yourself graduated. Consider yourself a fully realized
+      witch.
+    bark: {fileID: 8300000, guid: c15bf4ed67198dc40bcf7e29f08a2224, type: 3}
   nextConversation: {fileID: 0}
   triggerSentenceGame: 0

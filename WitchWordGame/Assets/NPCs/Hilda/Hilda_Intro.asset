@@ -18,7 +18,7 @@ MonoBehaviour:
       never felt before. Can someone like you really make a difference in people\u2019s
       lives? Are you more than just a burden to Miss Alba and the villagers? Questions
       like these bounce around your head. Soon, you find yourself at the door of
-      your next client. At this moment, your nerves come back\r"
+      your next client. At this moment, your nerves come back.\r"
     bark: {fileID: 0}
   - name: Irma
     text: Is anyone home?

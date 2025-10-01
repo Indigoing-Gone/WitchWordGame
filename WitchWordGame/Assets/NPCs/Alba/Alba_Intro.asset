@@ -15,44 +15,44 @@ MonoBehaviour:
   lines:
   - name: Miss Alba
     text: "Oh Irma! Good morning, dear. I must speak with you, if you have a moment.\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: af3a8dc70782d304bbd04d1aa89ca2c1, type: 3}
   - name: Irma
     text: "Yes of course! Did I do something wrong?\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: 4525c0c90039e524e9d8e0428219e518, type: 3}
   - name: Miss Alba
     text: "No. Quite the opposite, in fact. I believe that you are nearly ready to
       graduate from this apprenticeship. Your skills have grown beyond what I can
       teach directly.\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: a6cb4ad861581cd47b7dadf189a824ec, type: 3}
   - name: Irma
     text: "O-oh! Are you sure? You think I\u2019m ready?\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: 42ac866a1c66c2e47871a69afe30defe, type: 3}
   - name: Miss Alba
     text: "I\u2019ve prepared you as much as I am able. Readiness is something you
       must muster yourself.\r\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: 6f14403b30eab004f8aa48961ac816a0, type: 3}
   - name: Irma
     text: "Um. Ok? What do I have to do?\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: 8d4ac76f7b6044d4cb63ebe0340715d3, type: 3}
   - name: Miss Alba
     text: "It\u2019s quite simple; you\u2019ll be filling the role of town witch
       today. Make yourself available to help with the townspeople\u2019s troubles.
       By my scrying, I predict three tasks for you today. Solve these issues successfully
       and I shall declare you a true witch by the day\u2019s end. \r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: 3fbf5d1c57d6b4e4cb2fe61c4c9a7978, type: 3}
   - name: Irma
     text: "Three problems, three magical solutions, got it.\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: a99c1780cf170d14b944e585cd0bb85e, type: 3}
   - name: Miss Alba
     text: "Remember to carefully read your spellbook and choose your spells deliberately.
       Listen to your charge, determine what they want, and then make sure to provide
       exactly that. I shall not accept anything less. \r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: 6c5041839df5c7246afcca57a62b95d7, type: 3}
   - name: Miss Alba
     text: "Now be off. I sense that I may have a trying day, despite the circumstances.
       Return to me if you succeed. Should you fail, come to me and I may give you
       another chance.\r"
-    bark: {fileID: 0}
+    bark: {fileID: 8300000, guid: 6f14403b30eab004f8aa48961ac816a0, type: 3}
   - name: Narrator
     text: "Your loom, your spellcasting focus, is a comforting weight on your belt
       as you set out to face the day. You can almost sense the latent power in the

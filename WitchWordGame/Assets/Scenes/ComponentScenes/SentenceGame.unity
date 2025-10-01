@@ -911,6 +911,7 @@ MonoBehaviour:
   wordVisualPrefab: {fileID: 6954797084301886792, guid: aef74bdc8eaebb44fa9ec3e5ca4f999c, type: 3}
   sentenceGameBackground: {fileID: 966466364}
   sentenceGameUI: {fileID: 1013792665}
+  manaText: {fileID: 1659285077}
 --- !u!1 &781479659
 GameObject:
   m_ObjectHideFlags: 0

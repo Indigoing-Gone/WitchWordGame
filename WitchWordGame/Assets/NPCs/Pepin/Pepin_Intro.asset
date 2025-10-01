@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62cf432ef33a8c34282fe65bc7d7fcfd, type: 3}
+  m_Name: Pepin_Intro
+  m_EditorClassIdentifier: 
+  lines:
+  - name: Narrator
+    text: "The sky is clear as you meander along the dirt path, running your fingers
+      along the tall grass that lines the walkway. The light breeze and chirping
+      birds brace you as you prepare to face the first real test of your witching
+      prowess.\r"
+    bark: {fileID: 0}
+  - name: Narrator
+    text: What little determination you have managed to summon dissipates as a small
+      figure comes into view, walking hurriedly in your direction.
+    bark: {fileID: 0}
+  - name: Pepin
+    text: "Good morning Irma! Is Miss Alba home? I\u2019ve got to talk to her! "
+    bark: {fileID: 8300000, guid: 9592685f77c9f7b47bd14e21446e7016, type: 3}
+  - name: Irma
+    text: "Oh! Well actually\u2026 She\u2019s taking the day off today. Sorry\u2026\r"
+    bark: {fileID: 8300000, guid: 0106d92863139694593f5da9f5a1adcb, type: 3}
+  - name: Pepin
+    text: "Day off?! Is she sick?! Is she gonna die??!!\r"
+    bark: {fileID: 8300000, guid: 5bb86ca2847dc554ab75c3a1f749179f, type: 3}
+  - name: Irma
+    text: "Nonono! Nothing like that, don\u2019t worry. She\u2019s perfectly fine,
+      it\u2019s just-- "
+    bark: {fileID: 8300000, guid: 3c1a7d5c0707a80439b312d85a0fb4ae, type: 3}
+  - name: Pepin
+    text: "Can she come help me then? Nothing too dangerous or anything! It\u2019s
+      just for my sister and I really, *really* gotta get it done today. If she\u2019s
+      fine, she can help me, right? Right? "
+    bark: {fileID: 8300000, guid: 3a3ee3bf9c7fc7a469d5f798aef47114, type: 3}
+  - name: Pepin
+    text: "I just really need something and need it today. It\u2019s a secret present
+      for my sister. Wait, can you keep a secret? Promise you won\u2019t tell her!
+      If you tell her we\u2019re not friends anymore!"
+    bark: {fileID: 8300000, guid: d4525844aeb368b44a7ca3412cf25478, type: 3}
+  - name: Irma
+    text: "Well, um\u2026 I\u2019m filling in for her today\u2026 I can try to help
+      if you want\u2026? If that\u2019s okay? "
+    bark: {fileID: 8300000, guid: 3c1a7d5c0707a80439b312d85a0fb4ae, type: 3}
+  - name: Pepin
+    text: "Hmmm. Sure. But this is reeeeally serious so be careful, okay? This NEEDS
+      to be perfect. I\u2019m not the Best Big Brother for nothing! "
+    bark: {fileID: 8300000, guid: f348a6478cbfdc24a9e39da1ca39ab3f, type: 3}
+  - name: Irma
+    text: "On my honor as a witch, I\u2019ll do my best! Well then, what seems to
+      be the problem? Something about your sister?"
+    bark: {fileID: 8300000, guid: ed4cf23ebb653134f9a57c1dbf957a71, type: 3}
+  - name: Irma
+    text: "Yes! She\u2019s been sick, and I want to do something special for her,
+      and it has to be just right. I\u2019ve got a whole picnic set up, but there\u2019s
+      one problem\u2026 "
+    bark: {fileID: 8300000, guid: ed4cf23ebb653134f9a57c1dbf957a71, type: 3}
+  nextConversation: {fileID: 0}
+  triggerSentenceGame: 1

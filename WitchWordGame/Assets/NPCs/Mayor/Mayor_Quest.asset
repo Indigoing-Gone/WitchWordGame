@@ -15,7 +15,10 @@ MonoBehaviour:
   missionEvents:
   - missionStatus: 0
     conversation: {fileID: 11400000, guid: 07a0d098001037b4f8678ed8603a94b6, type: 2}
-    progressEvent: {fileID: 0}
+    progressEvent: {fileID: 11400000, guid: a045f5db44310424fb756e6291cca58c, type: 2}
+  - missionStatus: 1
+    conversation: {fileID: 11400000, guid: 0bbadbc8cf7991d45b13e0265649bc93, type: 2}
+    progressEvent: {fileID: 11400000, guid: 8451aa365878bd64e839bb9c60383a2a, type: 2}
   - missionStatus: 2
     conversation: {fileID: 11400000, guid: 4c2308b5bc38cb94e9faad18750ced93, type: 2}
     progressEvent: {fileID: 0}

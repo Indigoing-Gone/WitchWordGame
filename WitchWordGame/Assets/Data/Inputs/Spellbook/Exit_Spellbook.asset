@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Exit_Spellbook
   m_EditorClassIdentifier: 
   triggerInput: 2547
-  activeState: 1
-  isActive: 0
+  activeState: 4
+  isActive: 1

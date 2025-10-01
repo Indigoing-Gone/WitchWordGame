@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b37d8ba47810a48a4b69062c0c2a1e, type: 3}
   m_Name: Input_Scramble
   m_EditorClassIdentifier: 
-  triggerInput: 765
+  triggerInput: 1273546
   activeState: 3
   isActive: 0

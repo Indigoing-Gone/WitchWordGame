@@ -452,6 +452,8 @@ MonoBehaviour:
     guid: 41ec4460f5123a94e8cc45559a23afb7
   - asset: {fileID: 102900000, guid: 1c7855dc481b1f14ca1d1afc2f2e302a, type: 3}
     guid: 1c7855dc481b1f14ca1d1afc2f2e302a
+  - asset: {fileID: 102900000, guid: d0afde9cc9414d34c82f9078b35181f1, type: 3}
+    guid: d0afde9cc9414d34c82f9078b35181f1
   startScene:
     asset: {fileID: 102900000, guid: dd2563acd214a8748aa77e8fcda75085, type: 3}
     guid: dd2563acd214a8748aa77e8fcda75085

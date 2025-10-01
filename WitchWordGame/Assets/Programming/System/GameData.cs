@@ -34,6 +34,9 @@ public class GameData : MonoBehaviour
         SentenceGameController.SentenceGameEntered += () => GameState = GameState.SentenceGame;
         SentenceGameController.SentenceGameExited += () => GameState = GameState.Navigation;
 
+        SpellbookController.SpellbookOpened += () => GameState = GameState.Spellbook;
+        SpellbookController.SpellbookClosed += () => GameState = GameState.Navigation;
+
         MissionGiver.StartingMission += (_data) => modifiedMissionData.Add(_data);
         MissionGiver.EnteringSentenceGame += (_data) => modifiedSentenceData.Add(_data);
 
@@ -75,5 +78,6 @@ public enum GameState
     None,
     Navigation,
     Dialogue,
-    SentenceGame
+    SentenceGame,
+    Spellbook
 }

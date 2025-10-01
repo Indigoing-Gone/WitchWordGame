@@ -24,6 +24,8 @@ public class SpellbookController : MonoBehaviour
         right.InputRecieved += FlipRight;
         openSpellbook.InputRecieved += OpenBook;
         closeSpellbook.InputRecieved += CloseBook;
+
+        CloseBook();
     }
 
     private void OnDisable()

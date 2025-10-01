@@ -34,14 +34,14 @@ MonoBehaviour:
     - Adjective
     - several
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 2
   - word: blue
     hasClues: 1
     clues:
     - Color
     - lapis
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 1
   - word: flowers
     hasClues: 1
     clues:
@@ -62,7 +62,7 @@ MonoBehaviour:
     - Verb
     - provide
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 1
   - word: her
     hasClues: 0
     clues:

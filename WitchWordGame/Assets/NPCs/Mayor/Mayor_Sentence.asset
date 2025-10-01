@@ -49,14 +49,14 @@ MonoBehaviour:
     - Adjective
     - baronial
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 1
   - word: firework
     hasClues: 1
     clues:
     - Noun
     - pyrotechnic
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 1
   - word: display
     hasClues: 1
     clues:
@@ -98,28 +98,28 @@ MonoBehaviour:
     - Noun
     - hamlet
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 1
   - word: needs
     hasClues: 1
     clues:
     - verb
     - warrants
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 1
   - word: right
     hasClues: 1
     clues:
+    - adverb
     - squarely
-    - Synonym
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 2
   - word: now
     hasClues: 1
     clues:
     - Adverb
     - at present
     scramble: 
-    cluesUnlocked: 0
+    cluesUnlocked: 1
   - word: '!'
     hasClues: 0
     clues:

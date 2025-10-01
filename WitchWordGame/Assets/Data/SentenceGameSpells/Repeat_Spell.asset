@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 11400000, guid: 112a15ca418bdbd4098b2ff21d927754, type: 2}
   spellName: Repeat
-  chanceOfSuccess: 0.75
-  numberOfWordsChecked: 0.33
+  chanceOfSuccess: 0.8
+  numberOfWordsChecked: 0.3
   spellType: 1
   manaCost: 1

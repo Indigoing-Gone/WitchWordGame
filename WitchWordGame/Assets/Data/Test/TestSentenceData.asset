@@ -19,36 +19,42 @@ MonoBehaviour:
     clues:
     - Part of Speech
     - Synonym
+    scramble: 
     cluesUnlocked: 0
   - word: you
     hasClues: 0
     clues:
     - Part of Speech
     - Synonym
+    scramble: 
     cluesUnlocked: 0
   - word: water
     hasClues: 1
     clues:
     - Part of Speech
     - Synonym
+    scramble: 
     cluesUnlocked: 0
   - word: my
     hasClues: 0
     clues:
     - Part of Speech
     - Synonym
+    scramble: 
     cluesUnlocked: 0
   - word: plants
     hasClues: 1
     clues:
     - Part of Speech
     - Synonym
+    scramble: 
     cluesUnlocked: 0
   - word: '?'
     hasClues: 0
     clues:
     - Part of Speech
     - Synonym
+    scramble: 
     cluesUnlocked: 0
   spokenSentence: {fileID: 8300000, guid: 6a1e0e2545dccdc4ca181fb05961b1a8, type: 3}
-  sentenceMana: -1
+  sentenceMana: 995

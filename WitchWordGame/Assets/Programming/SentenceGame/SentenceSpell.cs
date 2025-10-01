@@ -25,5 +25,6 @@ public enum SpellType
 {
     None,
     AddClue,
-    Scramble
+    Scramble,
+    Reveal
 }

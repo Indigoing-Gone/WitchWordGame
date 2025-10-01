@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -19,7 +20,10 @@ public class SentenceData : ScriptableObject
             List<int> _indices = new();
             for (int i = 0; i < words.Length; i++)
             {
-                if (!words[i].hasClues || words[i].CluesUnlocked > words[i].clues.Length) continue;
+                if (!words[i].hasClues || 
+                    words[i].CluesUnlocked >= words[i].clues.Length || 
+                    words[i].scramble != "") 
+                    continue;
                 _indices.Add(i);
             }
             return _indices;
@@ -43,7 +47,8 @@ public class SentenceData : ScriptableObject
                 word = _matches[i].Value,
                 hasClues = false,
                 clues = new string[] { "Part of Speech", "Synonym" },
-                CluesUnlocked = 0
+                CluesUnlocked = 0,
+                scramble = ""
             };
         }
 
@@ -56,12 +61,19 @@ public class SentenceData : ScriptableObject
         words[_index].CluesUnlocked += _amount;
     }
 
+    public void RevealScramble(int _index)
+    {
+        if (_index >= words.Length || words[_index].scramble != "") return;
+        words[_index].TriggerRevealScramble();
+    }
+
     public void ResetData()
     {
         for (int i = 0; i < words.Length; i++)
         {
             if (!words[i].hasClues) continue;
             words[i].CluesUnlocked = 0;
+            words[i].scramble = "";
         }
 
         sentenceMana = -1;
@@ -74,6 +86,7 @@ public class Word
     public string word;
     public bool hasClues;
     public string[] clues;
+    public string scramble;
 
     [SerializeField] private int cluesUnlocked;
     public int CluesUnlocked
@@ -88,4 +101,13 @@ public class Word
     }
 
     public event Action ClueUnlocked;
+    public event Action RevealScramble;
+
+    public void TriggerRevealScramble()
+    {
+        List<char> _wordList = word.ToList();
+        SentenceGameController.Shuffle(_wordList);
+        scramble = new string(_wordList.ToArray());
+        RevealScramble?.Invoke();
+    }
 }

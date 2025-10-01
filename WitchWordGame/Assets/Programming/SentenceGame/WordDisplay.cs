@@ -1,4 +1,7 @@
+using NUnit.Framework;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,13 +25,15 @@ public class WordDisplay : MonoBehaviour
         word = _word;
 
         //Assign text
-        wordText.text = word.hasClues ? new string('X', word.word.Length) : word.word;
+        wordText.text = !word.hasClues ? word.word : new string('X', word.word.Length);
+        if(word.scramble != "") wordText.text = word.scramble;
         if (word.hasClues) for (int i = 0; i < cluesText.Length && i < word.clues.Length; i++) cluesText[i].text = word.clues[i];
         
         //Disable Clues
         for (int i = word.CluesUnlocked; i < cluesText.Length; i++) cluesText[i].gameObject.SetActive(false);
 
         word.ClueUnlocked += OnClueUnlocked;
+        word.RevealScramble += OnRevealScramble;
 
         RebuildLayout();
     }
@@ -42,6 +47,12 @@ public class WordDisplay : MonoBehaviour
     {
         int _clueIndexUnlocked = word.CluesUnlocked - 1;
         cluesText[_clueIndexUnlocked].gameObject.SetActive(true);
+        RebuildLayout();
+    }
+
+    private void OnRevealScramble()
+    {
+        wordText.text = word.scramble;
         RebuildLayout();
     }
 

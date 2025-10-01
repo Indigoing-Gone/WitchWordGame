@@ -10,7 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bd29aeac57fef947b36a743840f2c0e, type: 3}
-  m_Name: Mission_1
+  m_Name: Pepin_Mission
   m_EditorClassIdentifier: 
-  missionEvents: []
+  missionEvents:
+  - missionStatus: 0
+    conversation: {fileID: 11400000, guid: d35e271e7cfa441439c12eedfae8549b, type: 2}
+    progressEvent: {fileID: 0}
+  - missionStatus: 2
+    conversation: {fileID: 11400000, guid: 7ba251c92a70b074f93659015dcaaa20, type: 2}
+    progressEvent: {fileID: 0}
   activeMissionEventId: 0

@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ComponentScenes/SentenceGame.unity
+    path: Assets/Programming/System/ComponentScenes/SentenceGame.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/ComponentScenes/System.unity
+    path: Assets/Programming/System/ComponentScenes/System.unity
     guid: 791b449edcb4ed64099405bcfc1bcd73
   - enabled: 1
-    path: Assets/Scenes/ComponentScenes/Loom.unity
+    path: Assets/Programming/System/ComponentScenes/Loom.unity
     guid: 654ca55413589184f94c3b3484a73cde
   - enabled: 1
-    path: Assets/Scenes/ComponentScenes/Dialogue.unity
+    path: Assets/Programming/System/ComponentScenes/Dialogue.unity
     guid: a60ccfc9b2afc9148ab8214e77651441
   - enabled: 1
     path: Assets/Scenes/Locations/WitchHut.unity
@@ -32,6 +32,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: dd2563acd214a8748aa77e8fcda75085
+  - enabled: 1
+    path: Assets/Scenes/ComponentScenes/Loom.unity
+    guid: 175037ade07d91144b087f956b074e6a
+  - enabled: 1
+    path: Assets/Scenes/ComponentScenes/SentenceGame.unity
+    guid: 41ec4460f5123a94e8cc45559a23afb7
+  - enabled: 1
+    path: Assets/Scenes/ComponentScenes/Spellbook.unity
+    guid: d0afde9cc9414d34c82f9078b35181f1
+  - enabled: 1
+    path: Assets/Scenes/ComponentScenes/System.unity
+    guid: 2995779c222ee4943b6854fdc15d208d
+  - enabled: 1
+    path: Assets/Scenes/ComponentScenes/Dialogue.unity
+    guid: 1c7855dc481b1f14ca1d1afc2f2e302a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

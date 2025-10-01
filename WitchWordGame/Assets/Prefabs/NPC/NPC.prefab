@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -104,6 +104,7 @@ MonoBehaviour:
   missionData: {fileID: 0}
   sentenceData: {fileID: 0}
   startMissionEvent: {fileID: 0}
+  endMissionEvent: {fileID: 0}
   enterConversationInput: {fileID: 11400000, guid: 42b6898ad628332468f5d812cb7e2714, type: 2}
 --- !u!114 &8894888416317864941
 MonoBehaviour:

@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03b37d8ba47810a48a4b69062c0c2a1e, type: 3}
-  m_Name: Input_EnterDialogue
+  m_Script: {fileID: 11500000, guid: d6edc117b9483614fb34e349fee25c8a, type: 3}
+  m_Name: PepinEnd_Event
   m_EditorClassIdentifier: 
-  triggerInput: 72635
-  activeState: 1
-  isActive: 0

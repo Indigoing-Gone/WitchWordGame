@@ -255,8 +255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 276.23022, y: 267.04117}
-  m_SizeDelta: {x: 1242.1134, y: 44.3478}
+  m_AnchoredPosition: {x: -0.000024318695, y: 312.74457}
+  m_SizeDelta: {x: 1806.9901, y: 44.3478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737758576
 MonoBehaviour:
@@ -352,9 +352,7 @@ MonoBehaviour:
   spellProgression:
   - {fileID: 11400000, guid: 0673c76680fd64b4f96109a624778ed9, type: 2}
   spellProgressionEvents:
-  - {fileID: 11400000, guid: 1b2a67559d1534842848c8473fbf2d1d, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 99e9a144c826e9848b1ab5d014a0c2ae, type: 2}
 --- !u!114 &746242868
 MonoBehaviour:
   m_ObjectHideFlags: 0

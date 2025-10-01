@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0bf7c31d0dfa794ea5a3354064e73ef, type: 3}
+  m_Name: Meadow_Switcher
+  m_EditorClassIdentifier: 
+  input: {fileID: 11400000, guid: 1dd09706ebde7f444a6443a3f75b03f9, type: 2}
+  target:
+    asset: {fileID: 102900000, guid: 207f42ed9d3effd4288cc515379d51d4, type: 3}
+    guid: 207f42ed9d3effd4288cc515379d51d4
+  neighbors:
+  - asset: {fileID: 102900000, guid: 76e2f89f46207ab45bee9d040b028913, type: 3}
+    guid: 76e2f89f46207ab45bee9d040b028913
+  - asset: {fileID: 102900000, guid: 726e72c639e6a80439b14016abf6d8f3, type: 3}
+    guid: 726e72c639e6a80439b14016abf6d8f3

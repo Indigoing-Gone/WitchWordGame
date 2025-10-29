@@ -16,6 +16,7 @@ public class HideNavigation : MonoBehaviour
 
     private void DisplayNavigation(bool _state)
     {
+        if (display == null) return;
         display.SetActive(_state);
     }
 }

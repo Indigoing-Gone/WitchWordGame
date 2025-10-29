@@ -4,6 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Loom/Reciever")]
 public class LoomReciever : ScriptableObject
 {
+    public int id;
     [SerializeField] private string triggerInput;
     [SerializeField] private GameState activeState;
     [SerializeField] private bool isActive;
@@ -31,6 +32,8 @@ public class LoomReciever : ScriptableObject
 
             if (_inputSpan.ToString() != triggerInput) return;
         }
+
+        Debug.Log(id + " Recieved");
 
         InputRecieved?.Invoke();
     }

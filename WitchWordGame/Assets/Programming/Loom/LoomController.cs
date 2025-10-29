@@ -17,6 +17,7 @@ public class LoomController : MonoBehaviour
     [Header("Input")]
     private Vector2 pointerPosition;
     private bool isDragging;
+    [SerializeField] LoomReciever[] recievers;
 
     //Events
     static public event Action<string> InputCompleted;
@@ -25,6 +26,11 @@ public class LoomController : MonoBehaviour
     {
         input.PositionEvent += HandlePosition;
         input.ClickEvent += HandleClick;
+
+        for (int i = 0; i < recievers.Length; i++)
+        {
+            recievers[i].id = i;
+        }
     }
 
     private void OnDisable()

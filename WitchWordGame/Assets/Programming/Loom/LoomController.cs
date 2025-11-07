@@ -65,6 +65,7 @@ public class LoomController : MonoBehaviour
         selectedPegs.Add(_peg);
         _peg.SetPegUse(true);
         UpdateLoomLine();
+        UpdateMouseLine();
     }
 
     private void UpdateLoomLine()
